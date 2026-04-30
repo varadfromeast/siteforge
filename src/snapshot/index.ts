@@ -1,74 +1,29 @@
 /**
  * @module snapshot
  *
- * Wraps Stagehand's accessibility-tree snapshot into our domain.
- * Page → Atoms → State.
+ * Wraps the browser. Page → Atoms → State.
  *
- * What we use from Stagehand:
- *   - `captureHybridSnapshot(page)` returns { combinedTree, xpathMap, urlMap }
- *   - The a11y tree is a multiline text representation of the page semantics
- *   - xpathMap maps elementId ("0-76") → absolute XPath ("/html/body/...")
- *
- * What this module adds:
- *   - Parse Stagehand's tree into our Atom[] type
- *   - Strip dynamic noise (timestamps, generated class names, ad slots)
- *   - Classify the page into a StateKind (page/modal/form/list/...)
- *   - Hash → return a State
- *
- * GitNexus parallel: this is the Tree-sitter parsing phase — we extract
- * structure-bearing atoms from a substrate (DOM/a11y tree, not source code).
+ * v0.0.2: implements `captureSnapshot` using Playwright's built-in a11y
+ * snapshot. `classifyState` and `snapshotToState` deferred to v0.0.4.
  */
 
-import type { Atom, State, StateKind } from '../core/types.js';
+export type { SnapshotResult } from './types.js';
+export { captureSnapshot } from './capture.js';
+export { extractAtoms } from './atom-extract.js';
 
-/** Anything that resembles a Stagehand or Playwright Page. Kept loose for v1. */
-export type PageHandle = unknown;
+import type { State, StateKind } from '../core/types.js';
+import type { SnapshotResult } from './types.js';
 
-export interface SnapshotResult {
-  /** Raw a11y tree text (for debugging / LLM fallback). */
-  raw_tree: string;
-  /** elementId → absolute XPath. From Stagehand's xpathMap. */
-  xpath_map: Record<string, string>;
-  /** elementId → URL (for link atoms). */
-  url_map: Record<string, string>;
-  /** The current page URL. */
-  url: string;
-  /** Parsed and canonicalized atoms — what we actually persist + hash. */
-  atoms: Atom[];
+/**
+ * Decide the StateKind of a snapshot. (Deferred to v0.0.4.)
+ */
+export function classifyState(_snapshot: SnapshotResult): StateKind {
+  throw new Error('classifyState: not implemented (v0.0.4)');
 }
 
 /**
- * Capture an accessibility-tree snapshot via Stagehand and parse into atoms.
- * IMPLEMENTATION DEFERRED.
+ * Build a State object from a snapshot. (Deferred to v0.0.4.)
  */
-export async function captureSnapshot(page: PageHandle): Promise<SnapshotResult> {
-  throw new Error('captureSnapshot: not implemented');
-}
-
-// ---------------------------------------------------------------------------
-// State classification
-// (GitNexus parallel: classifying a Symbol as Function/Class/Method.)
-// ---------------------------------------------------------------------------
-
-/**
- * Decide the StateKind of a snapshot.
- * Heuristics:
- *   - `dialog` role at root → 'modal'
- *   - `form` role with submit-button atom → 'form'
- *   - `feed` or `list` role with many similar children → 'list'
- *   - URL changed and main role present → 'page'
- *   - error indicators ("Page not found", 404) → 'error'
- * IMPLEMENTATION DEFERRED.
- */
-export function classifyState(snapshot: SnapshotResult): StateKind {
-  throw new Error('classifyState: not implemented');
-}
-
-/**
- * Build a State object from a snapshot. Hashes atoms, classifies kind,
- * derives a human label.
- * IMPLEMENTATION DEFERRED.
- */
-export function snapshotToState(snapshot: SnapshotResult): State {
-  throw new Error('snapshotToState: not implemented');
+export function snapshotToState(_snapshot: SnapshotResult): State {
+  throw new Error('snapshotToState: not implemented (v0.0.4)');
 }

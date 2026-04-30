@@ -1,6 +1,6 @@
 {
   "name": "siteforge",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Build a per-site CLI + MCP server from any website. Proactive exploration, state-graph cache, deterministic replay with self-heal.",
   "license": "MIT",
   "author": "Varad Thokal",
@@ -14,7 +14,9 @@
     "build": "tsc",
     "dev": "tsx watch src/cli/index.ts",
     "typecheck": "tsc --noEmit",
-    "test": "echo 'no tests yet'"
+    "selfcheck": "tsx examples/self-check.ts",
+    "probe": "tsx examples/probe-instagram.ts",
+    "test": "npm run selfcheck"
   },
   "dependencies": {
     "@browserbasehq/stagehand": "^3.0.0",
