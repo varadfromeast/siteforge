@@ -69,12 +69,25 @@ function classifyOverlay(snapshot: SnapshotResult): StateKind | null {
   const roles = new Set(snapshot.atoms.map((atom) => atom.role));
   const names = snapshot.atoms.map((atom) => atom.accessible_name.toLowerCase());
 
-  if (roles.has('alert') || names.some((name) => /\b(error|failed|try again)\b/.test(name))) {
+  if (
+    snapshot.atoms.some((atom) => atom.role === 'alert' && isErrorOverlayName(atom.accessible_name.toLowerCase())) ||
+    names.some(isErrorOverlayName)
+  ) {
     return 'error';
   }
   if (roles.has('dialog') || roles.has('alertdialog')) return 'modal';
 
   return null;
+}
+
+function isErrorOverlayName(name: string): boolean {
+  if (name.length > 80) return false;
+  return (
+    name === 'error' ||
+    name === 'failed' ||
+    name === 'try again' ||
+    /\b(something went wrong|couldn't load|failed to load|try again later)\b/.test(name)
+  );
 }
 
 /**

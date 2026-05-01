@@ -19,9 +19,11 @@ emit per-site CLI + MCP server
 agents replace LLM-driven clicks with cached transitions
 ```
 
-We're at step 1, converging on step 2. **Stabilize surfaces before
-automating exploration** — an unstable surface filter would let the
-auto-explorer generate dozens of duplicate states per logical screen.
+We're now at the end of step 2 for a narrow Instagram vertical slice:
+surfaces are stable enough for a first compiler/emitter MVP. Keep
+expanding coverage carefully, but the next high-leverage move is no longer
+more random clicking — it is compiling the observed map into a real
+`SiteGraph` and emitting one or two tools.
 
 Latest useful artifacts:
 
@@ -30,6 +32,18 @@ Latest useful artifacts:
 - `.siteforge/maps/2026-05-01T05-46-28-575Z/` (v1)
 - `.siteforge/maps/2026-05-01T06-19-48-063Z/` (v2)
 - `.siteforge/maps/2026-05-01T08-25-27-440Z/` (v3)
+- `.siteforge/maps/2026-05-01T09-28-10-870Z/` (live v4, captured home →
+  Direct inbox before the latest surface-filter patch)
+- `.siteforge/inspections/2026-05-01T09-37-42-233Z/` (post-patch Direct
+  inbox visual+atom check; stable at 6 surface atoms)
+- `.siteforge/maps/2026-05-01T09-40-39-354Z/` (clean current baseline after
+  home+Direct context-aware filter patches; mapper is/was live)
+- `.siteforge/inspections/2026-05-01T09-40-51-152Z/` (post-patch home
+  visual+atom check; stable at 6 surface atoms)
+- `.siteforge/coverage/2026-05-01T10-47-50-969Z/` (final focused
+  Playwright coverage run; 8/8 flows completed)
+- `.siteforge/maps/2026-05-01T10-47-27-492Z/` (final map+Playwright trace:
+  7 states, 6 edges, compact surfaces)
 
 Do **not** commit `.siteforge/chrome-cdp/`. It is a reusable Chrome profile
 and contains cookies, history, and login data.
@@ -59,7 +73,21 @@ Examples / tools:
   clicks around in a real Chrome window; the script polls the current page,
   records new surface states and transitions. Writes
   `.siteforge/maps/<timestamp>/site-map.json` plus capture JSON files.
-  Records `op_type` per edge (`click`/`navigate`/`fill`/`submit`).
+  Records `op_type` per edge (`click`/`navigate`/`fill`/`submit`). It now
+  retries snapshot capture while canonical/surface atoms are empty so fast
+  SPA route changes don't get stored as 0-atom loading shells.
+- `examples/cover-instagram.ts` — focused Playwright coverage harness.
+  `npm run cover:instagram`. It drives a safe deterministic flow suite
+  against the same CDP Chrome and writes screenshots + atom snapshots to
+  `.siteforge/coverage/<timestamp>/`. This is the bridge between manual
+  mapping and `src/explorer`: Playwright drives, snapshot/surface records,
+  and the mapper can run beside it to collect edges.
+- `examples/inspect-live.ts` — companion visual inspector. Run
+  `npm run inspect:live` while `npm run map` is open. It attaches to the
+  same CDP Chrome, does not resize the viewport, and writes screenshots plus
+  atom snapshots to `.siteforge/inspections/<timestamp>/`. It exits
+  explicitly after writing the summary so CDP connections do not leave
+  hanging Node processes.
 - `examples/snapshot-self-check.ts` — synthetic checks for `classifyState`,
   `snapshotToState`, and `surfaceAtoms`. Run with `npm run snapshotcheck`.
 - `examples/self-check.ts` — pure-function checks for `core/canonicalize`,
@@ -72,6 +100,7 @@ Examples / tools:
 | v1 (05-46) | 19 | 21 | 22 | 11/19 (58%) | ~? | 7 nodes | 3 nodes |
 | v2 (06-19) | 23 | 28 | 29 | 0/23 (0%) | 24 | 6 nodes | 3 nodes |
 | v3 (08-25) | 18 | 21 | 30 | 4/18 (reels) | 28 | 3 nodes | 4 nodes |
+| final (10-47) | 7 | 6 | 7 | 0/7 | 6 | 1 node | 1 node |
 
 Each run we close one leak class and find the next one.
 
@@ -116,6 +145,8 @@ predicates. Predicates currently in use:
 - `isStoryDrawerButton` — `^story by\s.+`
 - `isFeedTimestamp` — link with name like `10 h`, `4 d`, `2 w`
 - `isSocialAggregate` — `1,605 others`
+- `normalizeSurfaceName` — currently normalizes the IG current-account
+  dropdown (`<handle> verified down chevron icon`) to `account menu`.
 - `isMediaPlaceholder` — `media thumbnail`, `video player`, `thumbnail`
 - `isFooterChrome` — link-only: `language`, `press`, `careers`, `sign up …`,
   `log in …`. **Role-restricted to link** so we never drop the actual
@@ -125,6 +156,16 @@ predicates. Predicates currently in use:
 - `isCommentCounter` — `^comment\s+\d[\d,.]*[kKmM]?$`
 - `isHashtagAtom` — link/button name starting with `#`
 - `isDmSidebarItem` — the four DM sidebar phrases above
+- `isDmConversationRow` — Direct inbox row buttons beginning with
+  `user-profile-picture ...`; keeps the raw private row in captures but
+  drops it from reusable surface identity.
+- `isContextualGlobalChrome` — URL-aware chrome handling. Example: left-nav
+  `reels` is dropped on `/` and `/direct/*`, but the profile tab `reels`
+  is kept on `/<handle>/`.
+- `isHomeFeedContent` — home-only drops for rotating feed content:
+  unread-chat badge buttons, `audio is muted`, content `follow`, caption
+  `more`, right-rail `switch`, `original audio`, ad CTAs, verified/content
+  person links, and display-name links.
 - `isGeoLocation` — link with `<city>, <region>` shape
 - `isRepeatedSuggestionAction` — `dismiss`, `see all`, `next`
 - `isGlobalChrome` — IG nav vocabulary list (28 entries inc.
@@ -192,46 +233,55 @@ fallback launch path (when no CDP Chrome is found) still uses the
 
 The architecture is right. State identity quality is the live work.
 
-- **Atom extraction is stable.** Same DOM → same hash. v3 reel
-  `40bf5d6e` was visited 7 times with identical surface_id every time.
-- **Surface filter has known leaks** that are being patched as data
-  exposes them.
-- **Forms went from 58% false-positive → 0% → 4/18 (reels) → expected 0%
-  after this commit.**
+- **Atom extraction is stable enough for emitter MVP.** Final focused
+  coverage completed all 8 target flows with compact surfaces:
+  - home feed: 6 atoms
+  - Direct inbox: 6 atoms
+  - Direct thread: 8 atoms
+  - profile: 8 atoms
+  - profile reels route: 1 atom on this account (`messages`; likely a
+    thin/unavailable tab state)
+  - reels feed/page: 4 atoms
+  - reel comments modal: 7 atoms
+  - search panel: 2 atoms
+- **False classifiers are fixed in the covered slice.** Empty IG `alert`
+  nodes no longer force `error`; `/reels/<id>/` no longer misclassifies as
+  `form`; Direct threads remain `panel`.
+- **Map + Playwright is a good workflow.** The mapper records the edge
+  trace while `cover:instagram` drives repeatable flows and writes visual
+  evidence. This is the practical shape `src/explorer` should grow into.
 
 ## Next Best Work
 
 Recommended order:
 
-1. **Run v4 of the map** with the latest patches landed. Click around the
-   surfaces v3 covered, **plus exercise messaging and commenting** so we
-   capture the comment-compose flow and the DM thread surface. Compare
-   v3 → v4:
-   - home `/` should be 1 node (was 3)
-   - `/<handle>/` per profile should be 1 node (was up to 4)
-   - reel page should be `page` not `form`, surface ~10–20 atoms (was 94)
-   - DM thread (`/direct/t/<id>/`) should be 1 node per thread
+1. Compile the final map into a real `SiteGraph`:
+   - source map: `.siteforge/maps/2026-05-01T10-47-27-492Z/site-map.json`
+   - use `surface_id` as `State.id`
+   - turn observed `MapEdge`s into `Operation`s
+   - persist via `storage.saveGraph()`
 
-2. Promote interactive-mapper concepts from `examples/map-instagram.ts` to
+2. Emit the first narrow CLI/MCP vertical slice:
+   - `open_direct_inbox`
+   - `open_direct_thread`
+   - `send_dm({ text })`
+   - optionally `open_reels` and `open_search`
+
+3. Promote interactive-mapper concepts from `examples/map-instagram.ts` to
    real modules:
    - snapshot capture record
    - surface state id
    - transition recorder
    - map serializer
 
-3. Add **context-aware** modes to `surfaceAtoms()` (deferred — current
-   global filters got us most of the way):
-   - `profile` surfaces, `feed` surfaces, `story` surfaces, `search`
-     surfaces, `post/reel modal` surfaces.
+4. Convert `examples/cover-instagram.ts` into the first concrete
+   `src/explorer` implementation. Keep it bounded, resumable, and safe:
+   no public comment submit, no accidental like/follow, no fast click loops.
 
-4. Build the auto-explorer (`npm run map --site=<url>`). Playwright clicks
+5. Build the auto-explorer (`npm run map --site=<url>`). Playwright clicks
    every interactable atom on the current state, snapshots, records
    transitions, backtracks to anchor. Time-bounded, depth-bounded,
    throttled. Only worth doing once surfaces are stable.
-
-5. Compile the observed map to a real `SiteGraph` (nodes from `surface_id`,
-   edges from observed transitions, persist via `storage.saveGraph()`).
-   Keep debug captures as sidecar files.
 
 ## Commands
 
@@ -244,6 +294,9 @@ npm run snapshotcheck                                        # snapshot/surface
 npm run probe -- --discover-profiles 3
 npm run map
 npm run map -- --start https://www.instagram.com/reels/ --duration 300
+npm run cover:instagram                                     # focused Playwright coverage
+npm run inspect:live
+npm run inspect:live -- --duration 120 --interval-ms 3000
 ```
 
 ## Verification Status

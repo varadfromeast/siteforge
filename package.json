@@ -17,6 +17,8 @@
     "selfcheck": "tsx examples/self-check.ts",
     "snapshotcheck": "tsx examples/snapshot-self-check.ts",
     "storagecheck": "tsx examples/storage-self-check.ts",
+    "cover:instagram": "tsx examples/cover-instagram.ts",
+    "inspect:live": "tsx examples/inspect-live.ts",
     "map": "tsx examples/map-instagram.ts",
     "probe": "tsx examples/probe-instagram.ts",
     "test": "npm run selfcheck && npm run snapshotcheck && npm run storagecheck"

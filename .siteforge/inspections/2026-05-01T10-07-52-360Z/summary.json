@@ -1,0 +1,3277 @@
+{
+  "run_dir": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T10-07-52-360Z",
+  "screenshots_dir": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T10-07-52-360Z/screenshots",
+  "snapshots_dir": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T10-07-52-360Z/snapshots",
+  "records": [
+    {
+      "index": 1,
+      "captured_at": "2026-05-01T10:07:53.346Z",
+      "url": "https://www.instagram.com/",
+      "title": "(4) Instagram",
+      "viewport": null,
+      "kind": "list",
+      "state_id": "253f876acd5deece3246d9dabcbd9cba04f89c4e9a09a1371cd68f83e02e6aa9",
+      "surface_id": "e321cede4bc6a917f2d5629865af2b853e788f8f6ad34a3188d61675752dfbdd",
+      "raw_tree_hash": "722383a91c2c8baefe4fd07e92677ce6a8a526c6191bd8b5f00a6f205f6e4eaf",
+      "atoms_raw_count": 1563,
+      "atoms_canonical_count": 207,
+      "atoms_surface_count": 7,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "delusion 💅💄",
+          "attrs": {}
+        }
+      ],
+      "canonical_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "4 unread chats",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "aashritp_stories's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "afsunmoosa's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio is muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio is muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio is muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio is muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "messages - 4 new notifications",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "next",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "sooweigoh's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by _muskaan_s_17, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by aniketsatpute__, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by cuttestaditi_, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by deeptee_11, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by deonddddd, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by ertugrulakben, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by gayatrivaidya9, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by kartiiikiiii, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by okayshardul, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by sanjana.suri, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by tejas_kodre, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by venukoranne, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "switch",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user avatar chaitanya lad",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user avatar risingsunland",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user avatar unmesh jadhav",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "combobox",
+          "accessible_name": "switch display language",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "1 d",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "12 h",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "2muchmotion • closer",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "4 d",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "_muskaan_s_17's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aashritp_stories",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aashritp_stories",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aashritp_stories's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aasiktee patil",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aasiktee_2510's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "about",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "about",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "afsunmoosa",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "afsunmoosa",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "afsunmoosa's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "also from meta",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aniketsatpute__'s profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "api",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "api",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "blog",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "candycane",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "contact uploading and non-users",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "cuttestaditi_'s profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "deeptee_11's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "delusion 💅💄",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "deonddddd's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "diksha",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "diksha_sathe_'s profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "ertugrulakben's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "explore",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "gayatrivaidya9's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "help",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "help",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "home",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "instagram",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "instagram lite",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "jobs",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "jobs",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "kartiiikiiii's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "kathjanine's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "kathlyn janine",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "language",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "lightnings_16's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "locations",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "locations",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "messages direct messaging – 4 new notifications link",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "meta",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "meta ai",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "meta verified",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "meta verified",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "new post",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "notifications",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "okayshardul's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "original audio",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "original audio",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "popular",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "press",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "privacy",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "privacy",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "professional dashboard",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "sanjana.suri's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "search",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "see all",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "see details right chevron",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "settings",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "shraiyya_fanclub's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "sooweigoh",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "sooweigoh verified",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "sooweigoh's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "taki.gpt",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "taki.gpt verified",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "taki.gpt's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "tejas_kodre's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "terms",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "terms",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "threads",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "tryholo.ai",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "tryholo.ai's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "venukoranne's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "video player",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "video player",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "video player",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "afrikaans",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "bahasa indonesia",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "bahasa melayu",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "dansk",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "deutsch",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "english",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "english (uk)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "español",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "español (españa)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "filipino",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "français",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "français (canada)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "hrvatski",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "italiano",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "magyar",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "nederlands",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "norsk",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "polski",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "português (brasil)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "português (portugal)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "română",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "slovenčina",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "suomi",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "svenska",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "tiếng việt",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "türkçe",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "čeština",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "ελληνικά",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "български",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "русский",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "српски",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "українська",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "עברית",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "اردو",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "العربية",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "فارسی",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "नेपाली",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "मराठी",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "हिन्दी",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "বাংলা",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "ਪੰਜਾਬੀ",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "ગુજરાતી",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "தமிழ்",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "తెలుగు",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "ಕನ್ನಡ",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "മലയാളം",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "සිංහල",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "ภาษาไทย",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "中文(台灣)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "中文(简体)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "中文(香港)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "日本語",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "한국어",
+          "attrs": {}
+        },
+        {
+          "role": "slider",
+          "accessible_name": "adjust volume",
+          "attrs": {}
+        },
+        {
+          "role": "slider",
+          "accessible_name": "adjust volume",
+          "attrs": {}
+        },
+        {
+          "role": "slider",
+          "accessible_name": "adjust volume",
+          "attrs": {}
+        },
+        {
+          "role": "slider",
+          "accessible_name": "adjust volume",
+          "attrs": {}
+        }
+      ],
+      "screenshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T10-07-52-360Z/screenshots/0001-e321cede4bc6.png",
+      "snapshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T10-07-52-360Z/snapshots/0001-e321cede4bc6.json"
+    },
+    {
+      "index": 2,
+      "captured_at": "2026-05-01T10:07:55.034Z",
+      "url": "https://www.instagram.com/",
+      "title": "(4) Instagram",
+      "viewport": null,
+      "kind": "list",
+      "state_id": "253f876acd5deece3246d9dabcbd9cba04f89c4e9a09a1371cd68f83e02e6aa9",
+      "surface_id": "e321cede4bc6a917f2d5629865af2b853e788f8f6ad34a3188d61675752dfbdd",
+      "raw_tree_hash": "722383a91c2c8baefe4fd07e92677ce6a8a526c6191bd8b5f00a6f205f6e4eaf",
+      "atoms_raw_count": 1563,
+      "atoms_canonical_count": 207,
+      "atoms_surface_count": 7,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "delusion 💅💄",
+          "attrs": {}
+        }
+      ],
+      "canonical_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "4 unread chats",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "aashritp_stories's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "afsunmoosa's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio is muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio is muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio is muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio is muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "messages - 4 new notifications",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "next",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "sooweigoh's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by _muskaan_s_17, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by aniketsatpute__, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by cuttestaditi_, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by deeptee_11, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by deonddddd, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by ertugrulakben, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by gayatrivaidya9, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by kartiiikiiii, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by okayshardul, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by sanjana.suri, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by tejas_kodre, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by venukoranne, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "switch",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user avatar chaitanya lad",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user avatar risingsunland",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user avatar unmesh jadhav",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "combobox",
+          "accessible_name": "switch display language",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "1 d",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "12 h",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "2muchmotion • closer",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "4 d",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "_muskaan_s_17's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aashritp_stories",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aashritp_stories",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aashritp_stories's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aasiktee patil",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aasiktee_2510's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "about",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "about",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "afsunmoosa",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "afsunmoosa",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "afsunmoosa's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "also from meta",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aniketsatpute__'s profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "api",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "api",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "blog",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "candycane",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "contact uploading and non-users",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "cuttestaditi_'s profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "deeptee_11's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "delusion 💅💄",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "deonddddd's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "diksha",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "diksha_sathe_'s profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "ertugrulakben's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "explore",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "gayatrivaidya9's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "help",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "help",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "home",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "instagram",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "instagram lite",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "jobs",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "jobs",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "kartiiikiiii's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "kathjanine's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "kathlyn janine",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "language",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "lightnings_16's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "locations",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "locations",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "messages direct messaging – 4 new notifications link",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "meta",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "meta ai",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "meta verified",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "meta verified",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "new post",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "notifications",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "okayshardul's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "original audio",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "original audio",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "popular",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "press",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "privacy",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "privacy",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "professional dashboard",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "sanjana.suri's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "search",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "see all",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "see details right chevron",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "settings",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "shraiyya_fanclub's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "sooweigoh",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "sooweigoh verified",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "sooweigoh's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "taki.gpt",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "taki.gpt verified",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "taki.gpt's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "tejas_kodre's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "terms",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "terms",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "threads",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "tryholo.ai",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "tryholo.ai's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "venukoranne's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "video player",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "video player",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "video player",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "afrikaans",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "bahasa indonesia",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "bahasa melayu",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "dansk",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "deutsch",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "english",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "english (uk)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "español",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "español (españa)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "filipino",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "français",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "français (canada)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "hrvatski",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "italiano",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "magyar",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "nederlands",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "norsk",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "polski",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "português (brasil)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "português (portugal)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "română",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "slovenčina",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "suomi",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "svenska",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "tiếng việt",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "türkçe",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "čeština",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "ελληνικά",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "български",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "русский",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "српски",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "українська",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "עברית",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "اردو",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "العربية",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "فارسی",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "नेपाली",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "मराठी",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "हिन्दी",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "বাংলা",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "ਪੰਜਾਬੀ",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "ગુજરાતી",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "தமிழ்",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "తెలుగు",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "ಕನ್ನಡ",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "മലയാളം",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "සිංහල",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "ภาษาไทย",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "中文(台灣)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "中文(简体)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "中文(香港)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "日本語",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "한국어",
+          "attrs": {}
+        },
+        {
+          "role": "slider",
+          "accessible_name": "adjust volume",
+          "attrs": {}
+        },
+        {
+          "role": "slider",
+          "accessible_name": "adjust volume",
+          "attrs": {}
+        },
+        {
+          "role": "slider",
+          "accessible_name": "adjust volume",
+          "attrs": {}
+        },
+        {
+          "role": "slider",
+          "accessible_name": "adjust volume",
+          "attrs": {}
+        }
+      ],
+      "screenshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T10-07-52-360Z/screenshots/0002-e321cede4bc6.png",
+      "snapshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T10-07-52-360Z/snapshots/0002-e321cede4bc6.json"
+    },
+    {
+      "index": 3,
+      "captured_at": "2026-05-01T10:07:56.711Z",
+      "url": "https://www.instagram.com/",
+      "title": "(4) Instagram",
+      "viewport": null,
+      "kind": "list",
+      "state_id": "f99e26279282af85e637912af97f5ab30bd366eeb82f82d5f2badbb6081c3596",
+      "surface_id": "e321cede4bc6a917f2d5629865af2b853e788f8f6ad34a3188d61675752dfbdd",
+      "raw_tree_hash": "8970c771ee26fbb665f6f2b4b947f5d3b5ea513d9eeaa409105a5d237b3a8685",
+      "atoms_raw_count": 1561,
+      "atoms_canonical_count": 207,
+      "atoms_surface_count": 7,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "delusion 💅💄",
+          "attrs": {}
+        }
+      ],
+      "canonical_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "4 unread chats",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "aashritp_stories's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "afsunmoosa's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio is muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio is muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio is muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio is muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "messages - 4 new notifications",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "next",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "sooweigoh's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by _muskaan_s_17, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by aniketsatpute__, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by cuttestaditi_, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by deeptee_11, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by deonddddd, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by ertugrulakben, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by gayatrivaidya9, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by kartiiikiiii, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by okayshardul, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by sanjana.suri, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by tejas_kodre, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "story by venukoranne, not seen",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "switch",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user avatar chaitanya lad",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user avatar risingsunland",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user avatar unmesh jadhav",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "combobox",
+          "accessible_name": "switch display language",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "1 d",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "12 h",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "2muchmotion • closer",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "4 d",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "_muskaan_s_17's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aashritp_stories",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aashritp_stories",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aashritp_stories's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aasiktee patil",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aasiktee_2510's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "about",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "about",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "afsunmoosa",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "afsunmoosa",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "afsunmoosa's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "also from meta",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aniketsatpute__'s profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "api",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "api",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "berlin, germany",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "blog",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "candycane",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "contact uploading and non-users",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "cuttestaditi_'s profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "deeptee_11's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "delusion 💅💄",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "deonddddd's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "diksha",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "diksha_sathe_'s profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "ertugrulakben's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "explore",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "gayatrivaidya9's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "help",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "help",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "home",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "instagram",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "instagram lite",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "jobs",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "jobs",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "kartiiikiiii's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "kathjanine's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "kathlyn janine",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "language",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "lightnings_16's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "locations",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "locations",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "messages direct messaging – 4 new notifications link",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "meta",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "meta ai",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "meta verified",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "meta verified",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "new post",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "notifications",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "okayshardul's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "original audio",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "popular",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "press",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "privacy",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "privacy",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "professional dashboard",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "sanjana.suri's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "search",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "see all",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "see details right chevron",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "settings",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "shraiyya_fanclub's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "sooweigoh",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "sooweigoh verified",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "sooweigoh's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "taki.gpt",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "taki.gpt verified",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "taki.gpt's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "tejas_kodre's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "terms",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "terms",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "threads",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "tryholo.ai",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "tryholo.ai's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "venukoranne's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "video player",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "video player",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "video player",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "afrikaans",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "bahasa indonesia",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "bahasa melayu",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "dansk",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "deutsch",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "english",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "english (uk)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "español",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "español (españa)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "filipino",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "français",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "français (canada)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "hrvatski",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "italiano",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "magyar",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "nederlands",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "norsk",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "polski",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "português (brasil)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "português (portugal)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "română",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "slovenčina",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "suomi",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "svenska",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "tiếng việt",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "türkçe",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "čeština",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "ελληνικά",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "български",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "русский",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "српски",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "українська",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "עברית",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "اردو",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "العربية",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "فارسی",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "नेपाली",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "मराठी",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "हिन्दी",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "বাংলা",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "ਪੰਜਾਬੀ",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "ગુજરાતી",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "தமிழ்",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "తెలుగు",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "ಕನ್ನಡ",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "മലയാളം",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "සිංහල",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "ภาษาไทย",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "中文(台灣)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "中文(简体)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "中文(香港)",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "日本語",
+          "attrs": {}
+        },
+        {
+          "role": "option",
+          "accessible_name": "한국어",
+          "attrs": {}
+        },
+        {
+          "role": "slider",
+          "accessible_name": "adjust volume",
+          "attrs": {}
+        },
+        {
+          "role": "slider",
+          "accessible_name": "adjust volume",
+          "attrs": {}
+        },
+        {
+          "role": "slider",
+          "accessible_name": "adjust volume",
+          "attrs": {}
+        },
+        {
+          "role": "slider",
+          "accessible_name": "adjust volume",
+          "attrs": {}
+        }
+      ],
+      "screenshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T10-07-52-360Z/screenshots/0003-e321cede4bc6.png",
+      "snapshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T10-07-52-360Z/snapshots/0003-e321cede4bc6.json"
+    }
+  ]
+}

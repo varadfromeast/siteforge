@@ -7,13 +7,20 @@ import type { Atom } from '../core/types.js';
  */
 export function surfaceAtoms(atoms: Atom[], pageUrl: string): Atom[] {
   const handle = handleFromProfileUrl(pageUrl);
+  const path = pathFromUrl(pageUrl);
 
   // Step 1: normalize accessible names to collapse icon+label-doubled forms
   // ("home home" -> "home", "professional dashboard dashboard" -> ..., etc.)
   const normalized = atoms.map((atom) => ({
     ...atom,
-    accessible_name: dedupeRepeatedPhrase(atom.accessible_name),
+    accessible_name: normalizeSurfaceName(dedupeRepeatedPhrase(atom.accessible_name)),
   }));
+  const hasSearchPanel = normalized.some(
+    (atom) => atom.role === 'textbox' && atom.accessible_name === 'search input',
+  );
+  const hasCommentComposer = normalized.some(
+    (atom) => atom.role === 'textbox' && atom.accessible_name === 'add a comment…',
+  );
 
   // Step 2: drop atoms that are noise / content / chrome.
   const filtered = normalized.filter((atom) => {
@@ -22,6 +29,13 @@ export function surfaceAtoms(atoms: Atom[], pageUrl: string): Atom[] {
     }
 
     const name = atom.accessible_name;
+    if (hasSearchPanel && !isSearchPanelAtom(atom)) return false;
+    if (hasCommentComposer && !isCommentComposerAtom(atom)) return false;
+    if (isDirectThreadSidebarChrome(atom, path)) return false;
+    if (isDirectThreadComposerControl(atom, path)) return true;
+    if (isDirectThreadContent(atom, path)) return false;
+    if (isProfileContent(atom, path)) return false;
+    if (isReelContent(atom, path)) return false;
     if (isStoryDrawerButton(name)) return false;
     if (isFeedTimestamp(atom)) return false;
     if (isSocialAggregate(name)) return false;
@@ -31,6 +45,9 @@ export function surfaceAtoms(atoms: Atom[], pageUrl: string): Atom[] {
     if (isCommentCounter(name)) return false;
     if (isHashtagAtom(atom)) return false;
     if (isDmSidebarItem(name)) return false;
+    if (isDmConversationRow(atom)) return false;
+    if (isContextualGlobalChrome(atom, path)) return false;
+    if (isHomeFeedContent(atom, path)) return false;
     if (isGeoLocation(atom)) return false;
     if (isRepeatedSuggestionAction(name)) return false;
     if (isGlobalChrome(name)) return false;
@@ -43,6 +60,33 @@ export function surfaceAtoms(atoms: Atom[], pageUrl: string): Atom[] {
   });
 
   return uniqueAtoms(filtered);
+}
+
+function pathFromUrl(url: string): string {
+  try {
+    return new URL(url).pathname;
+  } catch {
+    return '/';
+  }
+}
+
+function normalizeSurfaceName(name: string): string {
+  if (/^[a-z0-9._]{2,30} verified down chevron icon$/.test(name)) {
+    return 'account menu';
+  }
+  return name;
+}
+
+function isSearchPanelAtom(atom: Atom): boolean {
+  if (atom.role === 'textbox' && atom.accessible_name === 'search input') return true;
+  if (atom.role === 'button' && ['close', 'clear'].includes(atom.accessible_name)) return true;
+  return false;
+}
+
+function isCommentComposerAtom(atom: Atom): boolean {
+  if (atom.role === 'textbox' && atom.accessible_name === 'add a comment…') return true;
+  if (atom.role !== 'button') return false;
+  return ['close', 'emoji', 'like', 'repost', 'save', 'share'].includes(atom.accessible_name);
 }
 
 /**
@@ -170,7 +214,7 @@ function isFeedTimestamp(atom: Atom): boolean {
  * "1,605 others", "27 others" — counters from feed activity strips.
  */
 function isSocialAggregate(name: string): boolean {
-  return /^\d[\d,.]*\s+others$/.test(name);
+  return /^\d[\d,.]*[kKmM]?\s+others$/.test(name);
 }
 
 /**
@@ -250,6 +294,125 @@ function isDmSidebarItem(name: string): boolean {
 }
 
 /**
+ * Full Direct inbox conversation rows are rendered as giant buttons whose
+ * labels include a contact, preview text, timestamp, mute/unread status, etc.
+ * They are valuable private content in the raw snapshot, but poison reusable
+ * surface identity: every new message creates a new hash for the same inbox.
+ */
+function isDmConversationRow(atom: Atom): boolean {
+  if (atom.role !== 'button') return false;
+  return /^user-profile-picture\b/.test(atom.accessible_name);
+}
+
+/**
+ * On an open Direct thread, the left inbox column remains mounted. Keep the
+ * thread surface focused on the active conversation, not the surrounding
+ * inbox tabs/account switcher.
+ */
+function isDirectThreadSidebarChrome(atom: Atom, path: string): boolean {
+  if (!path.startsWith('/direct/t/')) return false;
+  const name = atom.accessible_name;
+  return (
+    (atom.role === 'button' && (name === 'new message' || name === 'account menu')) ||
+    (atom.role === 'tab' && ['primary', 'general', 'requests'].includes(name))
+  );
+}
+
+/**
+ * Direct composer controls are legitimate state affordances. A generic
+ * content filter would otherwise drop "add photo or video" because it ends
+ * in "video", which is correct for feed media links but wrong for chat.
+ */
+function isDirectThreadComposerControl(atom: Atom, path: string): boolean {
+  if (!path.startsWith('/direct/t/')) return false;
+  if (atom.role === 'textbox' && atom.accessible_name === 'message...') return true;
+  if (atom.role !== 'button') return false;
+
+  return [
+    'add photo or video',
+    'choose a gif or sticker',
+    'choose an emoji',
+    'voice clip',
+  ].includes(atom.accessible_name);
+}
+
+function isDirectThreadContent(atom: Atom, path: string): boolean {
+  if (!path.startsWith('/direct/t/')) return false;
+  if (atom.role === 'link') return true;
+  if (atom.role !== 'button') return false;
+  return (
+    /\bverified clip$/.test(atom.accessible_name) ||
+    atom.accessible_name === 'clip' ||
+    atom.accessible_name === 'more options'
+  );
+}
+
+function isProfileContent(atom: Atom, path: string): boolean {
+  if (!isProfilePath(path)) return false;
+
+  const name = atom.accessible_name;
+  if (/^\d+\s+unread chats?$/.test(name)) return true;
+  if (atom.role === 'button' && /@\w/.test(name)) return true;
+  if (atom.role !== 'link') return false;
+
+  if (name === handleFromPath(path)) return true;
+  if (/^[a-z0-9.-]+\.[a-z]{2,}(?:\/|\b)/.test(name)) return true;
+  if (/^view .+ highlight$/.test(name)) return true;
+
+  return false;
+}
+
+function isReelContent(atom: Atom, path: string): boolean {
+  if (!path.startsWith('/reels/') && !path.startsWith('/reel/')) return false;
+
+  const name = atom.accessible_name;
+  if (/^\d+\s+unread chats?$/.test(name)) return true;
+  if (
+    atom.role === 'button' &&
+    (['audio is muted', 'audio is unmuted', 'follow', 'more', 'press to play', 'video has no audio'].includes(name) ||
+      /^creator @/.test(name) ||
+      name.length > 30)
+  ) {
+    return true;
+  }
+  if (atom.role !== 'link') return false;
+
+  return name === 'audio image' || name === 'reels' || /\breels$/.test(name);
+}
+
+/**
+ * Some left-nav entries are also real in-page tabs on profile pages. Drop
+ * them only when the URL context tells us they are global chrome.
+ */
+function isContextualGlobalChrome(atom: Atom, path: string): boolean {
+  if (atom.role !== 'link') return false;
+  if (atom.accessible_name !== 'reels') return false;
+
+  return path === '/' || path.startsWith('/direct/');
+}
+
+/**
+ * Home/feed pages are intentionally volatile: suggested people, ads, like
+ * aggregates, audio links, and unread counters should stay in debug captures
+ * but not in the surface hash. The reusable post affordances — like,
+ * comment, share, save — are kept by falling through this predicate.
+ */
+function isHomeFeedContent(atom: Atom, path: string): boolean {
+  if (path !== '/') return false;
+
+  const name = atom.accessible_name;
+  if (/^\d+\s+unread chats?$/.test(name)) return true;
+  if (
+    atom.role === 'button' &&
+    ['audio is muted', 'follow', 'more', 'see translation', 'switch', 'tags', 'video has no audio'].includes(name)
+  ) {
+    return true;
+  }
+  if (atom.role !== 'link') return false;
+  return true;
+}
+
+/**
  * Geo-tagged location links from feed posts: "bangalore, india",
  * "los angeles, california". The link points to /explore/locations/<id>/.
  * They rotate with whichever posts are currently in the feed window.
@@ -317,6 +480,19 @@ function handleFromProfileUrl(url: string): string | null {
   } catch {
     return null;
   }
+}
+
+function isProfilePath(path: string): boolean {
+  const parts = path.split('/').filter(Boolean);
+  if (parts.length < 1 || parts.length > 2) return false;
+  if (['accounts', 'explore', 'direct', 'stories', 'reels', 'reel', 'p'].includes(parts[0]!)) return false;
+  if (parts.length === 2 && !['reels', 'tagged', 'saved', 'reposts'].includes(parts[1]!)) return false;
+  return true;
+}
+
+function handleFromPath(path: string): string | null {
+  const part = path.split('/').filter(Boolean)[0];
+  return part ? part.toLowerCase() : null;
 }
 
 function uniqueAtoms(atoms: Atom[]): Atom[] {

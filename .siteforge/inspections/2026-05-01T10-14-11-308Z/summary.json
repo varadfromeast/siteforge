@@ -1,0 +1,1017 @@
+{
+  "run_dir": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T10-14-11-308Z",
+  "screenshots_dir": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T10-14-11-308Z/screenshots",
+  "snapshots_dir": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T10-14-11-308Z/snapshots",
+  "records": [
+    {
+      "index": 1,
+      "captured_at": "2026-05-01T10:14:12.158Z",
+      "url": "https://www.instagram.com/direct/t/110847966976118/",
+      "title": "(4) Instagram • Messages",
+      "viewport": null,
+      "kind": "panel",
+      "state_id": "b722cf1efe2b3e0e942a7a3e5f8673773474a99307a725f671184775b1f0ce88",
+      "surface_id": "6b0335da44975f23e83654010df31e2e2b12c5bcaa9580afb9ca6598a371604d",
+      "raw_tree_hash": "a64f7670409ed32ea18fb318e3afe61d482fada87107cabe34376ce80d6e0f26",
+      "atoms_raw_count": 952,
+      "atoms_canonical_count": 54,
+      "atoms_surface_count": 8,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "add photo or video",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio call",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "choose a gif or sticker",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "choose an emoji",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "conversation information",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "video call",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "voice clip",
+          "attrs": {}
+        },
+        {
+          "role": "textbox",
+          "accessible_name": "message...",
+          "attrs": {}
+        }
+      ],
+      "canonical_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "add photo or video",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "angus.sewell verified clip",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio call",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "choose a gif or sticker",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "choose an emoji",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "clip",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "clip",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "conversation information",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "jacquesgreeff_ verified clip",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "loading... loading... loading...",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "maharashtra day 🚩 aniketsatpute__'s profile picture aniket satpute | traveller ",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "new message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "obsessed with... your note",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "react to message from ___animesh_",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "reply to message from ___animesh_",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "see more options for message from ___animesh_",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture adarsh nair you sent an attachment. 4 hours ago muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture animesh landge animesh sent an attachment. 4 minutes ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture ar. alpee thakur you sent an attachment. 4 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture bhavya 🌻 reacted 🤣 to your message 6 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture chaitanya lad chaitanya sent an attachment. about an hour a",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture risingsunland 4 new messages about an hour ago unread",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture tanya gureja you: in pune ? 16 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture unmesh jadhav yes yr 2 hours ago unread",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture user-profile-picture everyone is imp you sent an attachment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture भुमी🌻 you sent an attachment. about an hour ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "varad.th verified down chevron icon",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "video call",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "voice clip",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "❤️",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "also from meta",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "angus.sewell",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aniketsatpute__'s profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "explore",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "home",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "instagram",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "jacquesgreeff_",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "messages direct messaging – 4 new notifications link",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "new post",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "notifications",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "open the profile page of ___animesh_",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "open the profile page of ___animesh_",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "open the profile page of ___animesh_",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "professional dashboard",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "search",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "settings",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "general",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "primary",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "requests",
+          "attrs": {}
+        },
+        {
+          "role": "textbox",
+          "accessible_name": "message...",
+          "attrs": {}
+        },
+        {
+          "role": "textbox",
+          "accessible_name": "search",
+          "attrs": {}
+        }
+      ],
+      "screenshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T10-14-11-308Z/screenshots/0001-6b0335da4497.png",
+      "snapshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T10-14-11-308Z/snapshots/0001-6b0335da4497.json"
+    },
+    {
+      "index": 2,
+      "captured_at": "2026-05-01T10:14:13.822Z",
+      "url": "https://www.instagram.com/direct/t/110847966976118/",
+      "title": "(4) Instagram • Messages",
+      "viewport": null,
+      "kind": "panel",
+      "state_id": "b30c13368c066b54a4d31015d57d08d4bfe76ba9fa0fcf41866ff2f9d0d6e6f7",
+      "surface_id": "6b0335da44975f23e83654010df31e2e2b12c5bcaa9580afb9ca6598a371604d",
+      "raw_tree_hash": "9782efe79c904900df44070740ccd45d68c9571c881c0fee842f5e5bb00f3405",
+      "atoms_raw_count": 1024,
+      "atoms_canonical_count": 56,
+      "atoms_surface_count": 8,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "add photo or video",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio call",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "choose a gif or sticker",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "choose an emoji",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "conversation information",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "video call",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "voice clip",
+          "attrs": {}
+        },
+        {
+          "role": "textbox",
+          "accessible_name": "message...",
+          "attrs": {}
+        }
+      ],
+      "canonical_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "add photo or video",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "angus.sewell verified clip",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio call",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "choose a gif or sticker",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "choose an emoji",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "clip",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "clip",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "conversation information",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "jacquesgreeff_ verified clip",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "loading... loading... loading...",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "maharashtra day 🚩 aniketsatpute__'s profile picture aniket satpute | traveller ",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "new message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "obsessed with... your note",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "react to message from ___animesh_",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "reply to message from ___animesh_",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "see more options for message from ___animesh_",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture adarsh nair you sent an attachment. 4 hours ago muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture aleena__1991 you: ru in pune 17 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture animesh landge animesh sent an attachment. 5 minutes ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture ar. alpee thakur you sent an attachment. 4 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture bhavya 🌻 reacted 🤣 to your message 6 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture chaitanya lad chaitanya sent an attachment. about an hour a",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture e you sent an attachment. 16 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture risingsunland 4 new messages about an hour ago unread",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture tanya gureja you: in pune ? 16 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture unmesh jadhav yes yr 2 hours ago unread",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture user-profile-picture everyone is imp you sent an attachment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture भुमी🌻 you sent an attachment. about an hour ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "varad.th verified down chevron icon",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "video call",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "voice clip",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "❤️",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "also from meta",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "angus.sewell",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aniketsatpute__'s profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "explore",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "home",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "instagram",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "jacquesgreeff_",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "messages direct messaging – 4 new notifications link",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "new post",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "notifications",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "open the profile page of ___animesh_",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "open the profile page of ___animesh_",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "open the profile page of ___animesh_",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "professional dashboard",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "search",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "settings",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "general",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "primary",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "requests",
+          "attrs": {}
+        },
+        {
+          "role": "textbox",
+          "accessible_name": "message...",
+          "attrs": {}
+        },
+        {
+          "role": "textbox",
+          "accessible_name": "search",
+          "attrs": {}
+        }
+      ],
+      "screenshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T10-14-11-308Z/screenshots/0002-6b0335da4497.png",
+      "snapshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T10-14-11-308Z/snapshots/0002-6b0335da4497.json"
+    },
+    {
+      "index": 3,
+      "captured_at": "2026-05-01T10:14:15.478Z",
+      "url": "https://www.instagram.com/direct/t/110847966976118/",
+      "title": "(4) Instagram • Messages",
+      "viewport": null,
+      "kind": "panel",
+      "state_id": "b30c13368c066b54a4d31015d57d08d4bfe76ba9fa0fcf41866ff2f9d0d6e6f7",
+      "surface_id": "6b0335da44975f23e83654010df31e2e2b12c5bcaa9580afb9ca6598a371604d",
+      "raw_tree_hash": "9782efe79c904900df44070740ccd45d68c9571c881c0fee842f5e5bb00f3405",
+      "atoms_raw_count": 1024,
+      "atoms_canonical_count": 56,
+      "atoms_surface_count": 8,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "add photo or video",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio call",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "choose a gif or sticker",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "choose an emoji",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "conversation information",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "video call",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "voice clip",
+          "attrs": {}
+        },
+        {
+          "role": "textbox",
+          "accessible_name": "message...",
+          "attrs": {}
+        }
+      ],
+      "canonical_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "add photo or video",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "angus.sewell verified clip",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio call",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "choose a gif or sticker",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "choose an emoji",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "clip",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "clip",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "conversation information",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "jacquesgreeff_ verified clip",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "loading... loading... loading...",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "maharashtra day 🚩 aniketsatpute__'s profile picture aniket satpute | traveller ",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "new message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "obsessed with... your note",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "react to message from ___animesh_",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "reply to message from ___animesh_",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "see more options for message from ___animesh_",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture adarsh nair you sent an attachment. 4 hours ago muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture aleena__1991 you: ru in pune 17 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture animesh landge animesh sent an attachment. 5 minutes ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture ar. alpee thakur you sent an attachment. 4 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture bhavya 🌻 reacted 🤣 to your message 6 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture chaitanya lad chaitanya sent an attachment. about an hour a",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture e you sent an attachment. 16 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture risingsunland 4 new messages about an hour ago unread",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture tanya gureja you: in pune ? 16 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture unmesh jadhav yes yr 2 hours ago unread",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture user-profile-picture everyone is imp you sent an attachment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture भुमी🌻 you sent an attachment. about an hour ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "varad.th verified down chevron icon",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "video call",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "voice clip",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "❤️",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "also from meta",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "angus.sewell",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aniketsatpute__'s profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "explore",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "home",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "instagram",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "jacquesgreeff_",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "messages direct messaging – 4 new notifications link",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "new post",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "notifications",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "open the profile page of ___animesh_",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "open the profile page of ___animesh_",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "open the profile page of ___animesh_",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "professional dashboard",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "search",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "settings",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "general",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "primary",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "requests",
+          "attrs": {}
+        },
+        {
+          "role": "textbox",
+          "accessible_name": "message...",
+          "attrs": {}
+        },
+        {
+          "role": "textbox",
+          "accessible_name": "search",
+          "attrs": {}
+        }
+      ],
+      "screenshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T10-14-11-308Z/screenshots/0003-6b0335da4497.png",
+      "snapshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T10-14-11-308Z/snapshots/0003-6b0335da4497.json"
+    }
+  ]
+}

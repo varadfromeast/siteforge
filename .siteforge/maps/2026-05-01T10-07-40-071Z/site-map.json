@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-05-01T10:07:44.590Z",
+  "updated_at": "2026-05-01T10:08:42.948Z",
+  "start_url": "https://www.instagram.com/",
+  "nodes": {
+    "e321cede4bc6a917f2d5629865af2b853e788f8f6ad34a3188d61675752dfbdd": {
+      "id": "e321cede4bc6a917f2d5629865af2b853e788f8f6ad34a3188d61675752dfbdd",
+      "kind": "list",
+      "label": "/",
+      "first_seen": "2026-05-01T10:07:45.324Z",
+      "last_seen": "2026-05-01T10:07:45.324Z",
+      "visits": 1,
+      "url_samples": [
+        "https://www.instagram.com/"
+      ],
+      "state_ids": [
+        "253f876acd5deece3246d9dabcbd9cba04f89c4e9a09a1371cd68f83e02e6aa9"
+      ],
+      "raw_atoms_count": 1563,
+      "canonical_atoms_count": 207,
+      "surface_atoms_count": 7,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "delusion 💅💄",
+          "attrs": {}
+        }
+      ],
+      "capture_paths": [
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T10-07-40-071Z/captures/0001-e321cede4bc6.json"
+      ]
+    }
+  },
+  "edges": []
+}

@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-05-01T10:42:31.242Z",
+  "updated_at": "2026-05-01T10:44:15.269Z",
+  "start_url": "https://www.instagram.com/",
+  "nodes": {
+    "b561af8c704a2f41e30b0aa494e45a2a92cdf2868b74e968c3b2dc9db7004be8": {
+      "id": "b561af8c704a2f41e30b0aa494e45a2a92cdf2868b74e968c3b2dc9db7004be8",
+      "kind": "list",
+      "label": "/",
+      "first_seen": "2026-05-01T10:42:31.957Z",
+      "last_seen": "2026-05-01T10:43:06.542Z",
+      "visits": 2,
+      "url_samples": [
+        "https://www.instagram.com/"
+      ],
+      "state_ids": [
+        "993b306d82f4940b763a86decb2294c02b69763ceffc1a706e5675f67e2c4c2f",
+        "6dc39dade06764275abbccfff4ea692509130a8d8918b9ec75ba32bbc7bc948c"
+      ],
+      "raw_atoms_count": 1121,
+      "canonical_atoms_count": 169,
+      "surface_atoms_count": 6,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        }
+      ],
+      "capture_paths": [
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T10-42-25-502Z/captures/0001-b561af8c704a.json",
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T10-42-25-502Z/captures/0005-b561af8c704a.json"
+      ]
+    },
+    "134dffa1314a2ed18ee4328f50ebd73986d634e2380c76de299ea5651065b002": {
+      "id": "134dffa1314a2ed18ee4328f50ebd73986d634e2380c76de299ea5651065b002",
+      "kind": "panel",
+      "label": "/direct/inbox/",
+      "first_seen": "2026-05-01T10:42:47.728Z",
+      "last_seen": "2026-05-01T10:42:47.728Z",
+      "visits": 1,
+      "url_samples": [
+        "https://www.instagram.com/direct/inbox/"
+      ],
+      "state_ids": [
+        "102a749338ed8fe0038e1ebe110f94ce35753de9d6f3e7fdbe9d2face0c4a5ea"
+      ],
+      "raw_atoms_count": 794,
+      "canonical_atoms_count": 36,
+      "surface_atoms_count": 6,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "new message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "send message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "account menu",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "general",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "primary",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "requests",
+          "attrs": {}
+        }
+      ],
+      "capture_paths": [
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T10-42-25-502Z/captures/0002-134dffa1314a.json"
+      ]
+    },
+    "2cf177afdad6c95981dc3eebcf6e9ef983f4a42bb5f9af0345be600162a6887a": {
+      "id": "2cf177afdad6c95981dc3eebcf6e9ef983f4a42bb5f9af0345be600162a6887a",
+      "kind": "page",
+      "label": "profile/varad.th",
+      "first_seen": "2026-05-01T10:42:51.595Z",
+      "last_seen": "2026-05-01T10:42:51.595Z",
+      "visits": 1,
+      "url_samples": [
+        "https://www.instagram.com/varad.th/"
+      ],
+      "state_ids": [
+        "b24cc435702a39a6b1edab03220e60c80879767c652414dd84db59a56dadd94b"
+      ],
+      "raw_atoms_count": 609,
+      "canonical_atoms_count": 123,
+      "surface_atoms_count": 8,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "plus icon new",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "edit profile",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "posts",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reposts",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "tagged",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "view archive",
+          "attrs": {}
+        }
+      ],
+      "capture_paths": [
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T10-42-25-502Z/captures/0003-2cf177afdad6.json"
+      ]
+    },
+    "0d035ff837c3d9336257a72016eb439592cbfccd23512fb2767fcd2ddab72e31": {
+      "id": "0d035ff837c3d9336257a72016eb439592cbfccd23512fb2767fcd2ddab72e31",
+      "kind": "page",
+      "label": "/reels/DUV0ii1gs9G/",
+      "first_seen": "2026-05-01T10:42:59.084Z",
+      "last_seen": "2026-05-01T10:42:59.084Z",
+      "visits": 1,
+      "url_samples": [
+        "https://www.instagram.com/reels/DUV0ii1gs9G/"
+      ],
+      "state_ids": [
+        "066a91a0a4500f80151ae91827de4adb33efb9dfa34a06aa725bc26df7923a60"
+      ],
+      "raw_atoms_count": 587,
+      "canonical_atoms_count": 58,
+      "surface_atoms_count": 5,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "creator @jeffnippard",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        }
+      ],
+      "capture_paths": [
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T10-42-25-502Z/captures/0004-0d035ff837c3.json"
+      ]
+    },
+    "9e8327eb070fefadf70da6785fd7db97f0b134a53cec860f9f20fde7418bd0f8": {
+      "id": "9e8327eb070fefadf70da6785fd7db97f0b134a53cec860f9f20fde7418bd0f8",
+      "kind": "modal",
+      "label": "/",
+      "first_seen": "2026-05-01T10:43:08.710Z",
+      "last_seen": "2026-05-01T10:43:08.710Z",
+      "visits": 1,
+      "url_samples": [
+        "https://www.instagram.com/"
+      ],
+      "state_ids": [
+        "5c64e4fc38d014244fc550f1bb71e6340c98f7d80945c36777dbc715bdc3593e"
+      ],
+      "raw_atoms_count": 1372,
+      "canonical_atoms_count": 177,
+      "surface_atoms_count": 2,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "close",
+          "attrs": {}
+        },
+        {
+          "role": "textbox",
+          "accessible_name": "search input",
+          "attrs": {}
+        }
+      ],
+      "capture_paths": [
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T10-42-25-502Z/captures/0006-9e8327eb070f.json"
+      ]
+    }
+  },
+  "edges": [
+    {
+      "id": "b561af8c704a->134dffa1314a",
+      "from": "b561af8c704a2f41e30b0aa494e45a2a92cdf2868b74e968c3b2dc9db7004be8",
+      "to": "134dffa1314a2ed18ee4328f50ebd73986d634e2380c76de299ea5651065b002",
+      "count": 1,
+      "first_seen": "2026-05-01T10:42:47.730Z",
+      "last_seen": "2026-05-01T10:42:47.730Z",
+      "from_url": "https://www.instagram.com/",
+      "to_url": "https://www.instagram.com/direct/inbox/",
+      "op_type": "navigate"
+    },
+    {
+      "id": "134dffa1314a->2cf177afdad6",
+      "from": "134dffa1314a2ed18ee4328f50ebd73986d634e2380c76de299ea5651065b002",
+      "to": "2cf177afdad6c95981dc3eebcf6e9ef983f4a42bb5f9af0345be600162a6887a",
+      "count": 1,
+      "first_seen": "2026-05-01T10:42:51.596Z",
+      "last_seen": "2026-05-01T10:42:51.596Z",
+      "from_url": "https://www.instagram.com/direct/inbox/",
+      "to_url": "https://www.instagram.com/varad.th/",
+      "op_type": "navigate"
+    },
+    {
+      "id": "2cf177afdad6->0d035ff837c3",
+      "from": "2cf177afdad6c95981dc3eebcf6e9ef983f4a42bb5f9af0345be600162a6887a",
+      "to": "0d035ff837c3d9336257a72016eb439592cbfccd23512fb2767fcd2ddab72e31",
+      "count": 1,
+      "first_seen": "2026-05-01T10:42:59.084Z",
+      "last_seen": "2026-05-01T10:42:59.084Z",
+      "from_url": "https://www.instagram.com/varad.th/",
+      "to_url": "https://www.instagram.com/reels/DUV0ii1gs9G/",
+      "op_type": "navigate"
+    },
+    {
+      "id": "0d035ff837c3->b561af8c704a",
+      "from": "0d035ff837c3d9336257a72016eb439592cbfccd23512fb2767fcd2ddab72e31",
+      "to": "b561af8c704a2f41e30b0aa494e45a2a92cdf2868b74e968c3b2dc9db7004be8",
+      "count": 1,
+      "first_seen": "2026-05-01T10:43:06.542Z",
+      "last_seen": "2026-05-01T10:43:06.542Z",
+      "from_url": "https://www.instagram.com/reels/DUV0ii1gs9G/",
+      "to_url": "https://www.instagram.com/",
+      "op_type": "navigate"
+    },
+    {
+      "id": "b561af8c704a->9e8327eb070f",
+      "from": "b561af8c704a2f41e30b0aa494e45a2a92cdf2868b74e968c3b2dc9db7004be8",
+      "to": "9e8327eb070fefadf70da6785fd7db97f0b134a53cec860f9f20fde7418bd0f8",
+      "count": 1,
+      "first_seen": "2026-05-01T10:43:08.711Z",
+      "last_seen": "2026-05-01T10:43:08.711Z",
+      "from_url": "https://www.instagram.com/",
+      "to_url": "https://www.instagram.com/",
+      "op_type": "navigate"
+    }
+  ]
+}

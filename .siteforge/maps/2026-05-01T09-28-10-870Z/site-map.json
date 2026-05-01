@@ -1,0 +1,684 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-05-01T09:28:24.951Z",
+  "updated_at": "2026-05-01T09:38:53.663Z",
+  "start_url": "https://www.instagram.com/",
+  "nodes": {
+    "44ebe4310c961f64b911a97d3296583d262d306e93e671b6d069e6081da30dda": {
+      "id": "44ebe4310c961f64b911a97d3296583d262d306e93e671b6d069e6081da30dda",
+      "kind": "list",
+      "label": "/",
+      "first_seen": "2026-05-01T09:28:25.717Z",
+      "last_seen": "2026-05-01T09:29:14.020Z",
+      "visits": 7,
+      "url_samples": [
+        "https://www.instagram.com/"
+      ],
+      "state_ids": [
+        "e6963d35081559a99fd87c5cd84d3c1111eb8ecd94f857a8501905d17ba5c3d3"
+      ],
+      "raw_atoms_count": 1449,
+      "canonical_atoms_count": 204,
+      "surface_atoms_count": 18,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "4 unread chats",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio is muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "switch",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "19.5k others",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "antara andulkar",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "dr. ananya prashar",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "get offer right chevron",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "mosseri verified",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "sayli dahat",
+          "attrs": {}
+        }
+      ],
+      "capture_paths": [
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-28-10-870Z/captures/0001-44ebe4310c96.json",
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-28-10-870Z/captures/0003-44ebe4310c96.json",
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-28-10-870Z/captures/0005-44ebe4310c96.json",
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-28-10-870Z/captures/0007-44ebe4310c96.json",
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-28-10-870Z/captures/0009-44ebe4310c96.json",
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-28-10-870Z/captures/0011-44ebe4310c96.json",
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-28-10-870Z/captures/0013-44ebe4310c96.json"
+      ]
+    },
+    "30f3772385ec8a31b5e424fbe4a9d3562e39d63207627c0864b6f840d7d75d82": {
+      "id": "30f3772385ec8a31b5e424fbe4a9d3562e39d63207627c0864b6f840d7d75d82",
+      "kind": "list",
+      "label": "/",
+      "first_seen": "2026-05-01T09:28:30.103Z",
+      "last_seen": "2026-05-01T09:29:18.511Z",
+      "visits": 7,
+      "url_samples": [
+        "https://www.instagram.com/"
+      ],
+      "state_ids": [
+        "5422e465e3818e2cb2a55540cff458d3416aee424caa28c9ecef55668849c2ae"
+      ],
+      "raw_atoms_count": 1446,
+      "canonical_atoms_count": 205,
+      "surface_atoms_count": 19,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "4 unread chats",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio is muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "switch",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "19.5k others",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "antara andulkar",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "dr. ananya prashar",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "get offer right chevron",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "mosseri verified",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "original audio",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "sayli dahat",
+          "attrs": {}
+        }
+      ],
+      "capture_paths": [
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-28-10-870Z/captures/0002-30f3772385ec.json",
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-28-10-870Z/captures/0004-30f3772385ec.json",
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-28-10-870Z/captures/0006-30f3772385ec.json",
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-28-10-870Z/captures/0008-30f3772385ec.json",
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-28-10-870Z/captures/0010-30f3772385ec.json",
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-28-10-870Z/captures/0012-30f3772385ec.json",
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-28-10-870Z/captures/0014-30f3772385ec.json"
+      ]
+    },
+    "71cf18a22e53e51bb09b6f2e2fa256749f82049365033f85c0ff59d2864c1845": {
+      "id": "71cf18a22e53e51bb09b6f2e2fa256749f82049365033f85c0ff59d2864c1845",
+      "kind": "list",
+      "label": "/",
+      "first_seen": "2026-05-01T09:29:20.685Z",
+      "last_seen": "2026-05-01T09:29:29.892Z",
+      "visits": 2,
+      "url_samples": [
+        "https://www.instagram.com/"
+      ],
+      "state_ids": [
+        "dd2619413055218afb1acea7f1daac530d57c3d53610a0528d41019054be2bbc",
+        "3c7ef21e087eb0d39e16e91686fab87e6f9d401c2f05f089996c7b28952a81d8"
+      ],
+      "raw_atoms_count": 1647,
+      "canonical_atoms_count": 223,
+      "surface_atoms_count": 20,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "4 unread chats",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio is muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "switch",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "15.3k others",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "19.5k others",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "antara andulkar",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "dr. ananya prashar",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "get offer right chevron",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "maiseu verified",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "mosseri verified",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "sayli dahat",
+          "attrs": {}
+        }
+      ],
+      "capture_paths": [
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-28-10-870Z/captures/0015-71cf18a22e53.json",
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-28-10-870Z/captures/0017-71cf18a22e53.json"
+      ]
+    },
+    "b08ca70d6690072b86c10ab0cca49747eae1e2f80831337e076590302f08a939": {
+      "id": "b08ca70d6690072b86c10ab0cca49747eae1e2f80831337e076590302f08a939",
+      "kind": "list",
+      "label": "/",
+      "first_seen": "2026-05-01T09:29:25.085Z",
+      "last_seen": "2026-05-01T09:29:25.085Z",
+      "visits": 1,
+      "url_samples": [
+        "https://www.instagram.com/"
+      ],
+      "state_ids": [
+        "3e190fb9890b41556a7e2ee5e303001ceee0c3f2c56c21fd12825bc529b85c4a"
+      ],
+      "raw_atoms_count": 1646,
+      "canonical_atoms_count": 224,
+      "surface_atoms_count": 21,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "4 unread chats",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio is muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "switch",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "15.3k others",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "19.5k others",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "antara andulkar",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "dr. ananya prashar",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "get offer right chevron",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "maiseu verified",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "mosseri verified",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "original audio",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "sayli dahat",
+          "attrs": {}
+        }
+      ],
+      "capture_paths": [
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-28-10-870Z/captures/0016-b08ca70d6690.json"
+      ]
+    },
+    "e8552871896ad2eb43d92435e2234b313d08429e45f04ff12164a190f8e4c175": {
+      "id": "e8552871896ad2eb43d92435e2234b313d08429e45f04ff12164a190f8e4c175",
+      "kind": "panel",
+      "label": "/direct/inbox/",
+      "first_seen": "2026-05-01T09:29:32.069Z",
+      "last_seen": "2026-05-01T09:29:32.069Z",
+      "visits": 1,
+      "url_samples": [
+        "https://www.instagram.com/direct/inbox/"
+      ],
+      "state_ids": [
+        "2122ed76e9505c56caeae34208430deee290f7d0351d7a06191afca72d19f713"
+      ],
+      "raw_atoms_count": 228,
+      "canonical_atoms_count": 13,
+      "surface_atoms_count": 1,
+      "surface_atoms": [
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        }
+      ],
+      "capture_paths": [
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-28-10-870Z/captures/0018-e8552871896a.json"
+      ]
+    },
+    "5e78cb10887a95ade43c5763562a63cb00c94ec7ddcae88c734c3a033ee9af3d": {
+      "id": "5e78cb10887a95ade43c5763562a63cb00c94ec7ddcae88c734c3a033ee9af3d",
+      "kind": "panel",
+      "label": "/direct/inbox/",
+      "first_seen": "2026-05-01T09:29:34.234Z",
+      "last_seen": "2026-05-01T09:29:34.234Z",
+      "visits": 1,
+      "url_samples": [
+        "https://www.instagram.com/direct/inbox/"
+      ],
+      "state_ids": [
+        "7fb5d9465c54e53b6e811b0248801508eb00c86fa39957b9571ce32d67451578"
+      ],
+      "raw_atoms_count": 794,
+      "canonical_atoms_count": 36,
+      "surface_atoms_count": 10,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "new message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "send message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture aleena__1991 you: ru in pune 16 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture bhavya 🌻 reacted 🤣 to your message 6 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture unmesh jadhav yes yr 2 hours ago unread",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "varad.th verified down chevron icon",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "general",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "primary",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "requests",
+          "attrs": {}
+        }
+      ],
+      "capture_paths": [
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-28-10-870Z/captures/0019-5e78cb10887a.json"
+      ]
+    }
+  },
+  "edges": [
+    {
+      "id": "44ebe4310c96->30f3772385ec",
+      "from": "44ebe4310c961f64b911a97d3296583d262d306e93e671b6d069e6081da30dda",
+      "to": "30f3772385ec8a31b5e424fbe4a9d3562e39d63207627c0864b6f840d7d75d82",
+      "count": 7,
+      "first_seen": "2026-05-01T09:28:30.103Z",
+      "last_seen": "2026-05-01T09:29:18.511Z",
+      "from_url": "https://www.instagram.com/",
+      "to_url": "https://www.instagram.com/",
+      "op_type": "navigate"
+    },
+    {
+      "id": "30f3772385ec->44ebe4310c96",
+      "from": "30f3772385ec8a31b5e424fbe4a9d3562e39d63207627c0864b6f840d7d75d82",
+      "to": "44ebe4310c961f64b911a97d3296583d262d306e93e671b6d069e6081da30dda",
+      "count": 6,
+      "first_seen": "2026-05-01T09:28:32.312Z",
+      "last_seen": "2026-05-01T09:29:14.020Z",
+      "from_url": "https://www.instagram.com/",
+      "to_url": "https://www.instagram.com/",
+      "op_type": "navigate"
+    },
+    {
+      "id": "30f3772385ec->71cf18a22e53",
+      "from": "30f3772385ec8a31b5e424fbe4a9d3562e39d63207627c0864b6f840d7d75d82",
+      "to": "71cf18a22e53e51bb09b6f2e2fa256749f82049365033f85c0ff59d2864c1845",
+      "count": 1,
+      "first_seen": "2026-05-01T09:29:20.685Z",
+      "last_seen": "2026-05-01T09:29:20.685Z",
+      "from_url": "https://www.instagram.com/",
+      "to_url": "https://www.instagram.com/",
+      "op_type": "navigate"
+    },
+    {
+      "id": "71cf18a22e53->b08ca70d6690",
+      "from": "71cf18a22e53e51bb09b6f2e2fa256749f82049365033f85c0ff59d2864c1845",
+      "to": "b08ca70d6690072b86c10ab0cca49747eae1e2f80831337e076590302f08a939",
+      "count": 1,
+      "first_seen": "2026-05-01T09:29:25.086Z",
+      "last_seen": "2026-05-01T09:29:25.086Z",
+      "from_url": "https://www.instagram.com/",
+      "to_url": "https://www.instagram.com/",
+      "op_type": "navigate"
+    },
+    {
+      "id": "b08ca70d6690->71cf18a22e53",
+      "from": "b08ca70d6690072b86c10ab0cca49747eae1e2f80831337e076590302f08a939",
+      "to": "71cf18a22e53e51bb09b6f2e2fa256749f82049365033f85c0ff59d2864c1845",
+      "count": 1,
+      "first_seen": "2026-05-01T09:29:29.892Z",
+      "last_seen": "2026-05-01T09:29:29.892Z",
+      "from_url": "https://www.instagram.com/",
+      "to_url": "https://www.instagram.com/",
+      "op_type": "navigate"
+    },
+    {
+      "id": "71cf18a22e53->e8552871896a",
+      "from": "71cf18a22e53e51bb09b6f2e2fa256749f82049365033f85c0ff59d2864c1845",
+      "to": "e8552871896ad2eb43d92435e2234b313d08429e45f04ff12164a190f8e4c175",
+      "count": 1,
+      "first_seen": "2026-05-01T09:29:32.069Z",
+      "last_seen": "2026-05-01T09:29:32.069Z",
+      "from_url": "https://www.instagram.com/",
+      "to_url": "https://www.instagram.com/direct/inbox/",
+      "op_type": "click",
+      "last_click": {
+        "text": "Messages4Messages",
+        "href": "https://www.instagram.com/direct/inbox/",
+        "role": "link",
+        "at": 1777627771662
+      }
+    },
+    {
+      "id": "e8552871896a->5e78cb10887a",
+      "from": "e8552871896ad2eb43d92435e2234b313d08429e45f04ff12164a190f8e4c175",
+      "to": "5e78cb10887a95ade43c5763562a63cb00c94ec7ddcae88c734c3a033ee9af3d",
+      "count": 1,
+      "first_seen": "2026-05-01T09:29:34.234Z",
+      "last_seen": "2026-05-01T09:29:34.234Z",
+      "from_url": "https://www.instagram.com/direct/inbox/",
+      "to_url": "https://www.instagram.com/direct/inbox/",
+      "op_type": "navigate"
+    }
+  ]
+}

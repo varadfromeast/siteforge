@@ -1,0 +1,19 @@
+{
+  "url": "https://www.instagram.com/direct/t/110847966976118/",
+  "kind": "panel",
+  "state_id": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "surface_id": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "raw_tree_hash": "1071c904d288f822687571fbcb20b9c17d91680a5386958da7d107ed87b7ad53",
+  "atoms_raw_count": 1,
+  "atoms_canonical_count": 0,
+  "atoms_surface_count": 0,
+  "raw_atoms": [
+    {
+      "role": "RootWebArea",
+      "accessible_name": "",
+      "attrs": {}
+    }
+  ],
+  "canonical_atoms": [],
+  "surface_atoms": []
+}

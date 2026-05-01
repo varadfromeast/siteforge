@@ -1,0 +1,1007 @@
+{
+  "run_dir": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T09-29-48-574Z",
+  "screenshots_dir": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T09-29-48-574Z/screenshots",
+  "snapshots_dir": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T09-29-48-574Z/snapshots",
+  "records": [
+    {
+      "index": 1,
+      "captured_at": "2026-05-01T09:29:49.500Z",
+      "url": "https://www.instagram.com/direct/inbox/",
+      "title": "(4) Instagram • Messages",
+      "viewport": null,
+      "kind": "panel",
+      "state_id": "7fb5d9465c54e53b6e811b0248801508eb00c86fa39957b9571ce32d67451578",
+      "surface_id": "5e78cb10887a95ade43c5763562a63cb00c94ec7ddcae88c734c3a033ee9af3d",
+      "raw_tree_hash": "725dd00707f50ae7fcd691ee23d9368bddc76b4563240d5771c7f5cf85fdd35a",
+      "atoms_raw_count": 794,
+      "atoms_canonical_count": 36,
+      "atoms_surface_count": 10,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "new message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "send message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture aleena__1991 you: ru in pune 16 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture bhavya 🌻 reacted 🤣 to your message 6 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture unmesh jadhav yes yr 2 hours ago unread",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "varad.th verified down chevron icon",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "general",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "primary",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "requests",
+          "attrs": {}
+        }
+      ],
+      "canonical_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "loading... loading... loading...",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "maharashtra day 🚩 aniketsatpute__'s profile picture aniket satpute | traveller ",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "new message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "obsessed with... your note",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "send message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture adarsh nair you sent an attachment. 3 hours ago muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture aleena__1991 you: ru in pune 16 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture animesh landge animesh sent an attachment. 22 minutes ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture ar. alpee thakur you sent an attachment. 3 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture bhavya 🌻 reacted 🤣 to your message 6 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture chaitanya lad chaitanya sent an attachment. 34 minutes ago ",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture e you sent an attachment. 15 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture risingsunland 4 new messages about an hour ago unread",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture tanya gureja you: in pune ? 15 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture unmesh jadhav yes yr 2 hours ago unread",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture user-profile-picture everyone is imp you sent an attachment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture भुमी🌻 you sent an attachment. 51 minutes ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "varad.th verified down chevron icon",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "also from meta",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aniketsatpute__'s profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "explore",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "home",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "instagram",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "messages direct messaging – 4 new notifications link",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "new post",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "notifications",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "professional dashboard",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "search",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "settings",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "general",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "primary",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "requests",
+          "attrs": {}
+        },
+        {
+          "role": "textbox",
+          "accessible_name": "search",
+          "attrs": {}
+        }
+      ],
+      "screenshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T09-29-48-574Z/screenshots/0001-5e78cb10887a.png",
+      "snapshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T09-29-48-574Z/snapshots/0001-5e78cb10887a.json"
+    },
+    {
+      "index": 2,
+      "captured_at": "2026-05-01T09:29:51.073Z",
+      "url": "https://www.instagram.com/direct/inbox/",
+      "title": "(4) Instagram • Messages",
+      "viewport": null,
+      "kind": "panel",
+      "state_id": "7fb5d9465c54e53b6e811b0248801508eb00c86fa39957b9571ce32d67451578",
+      "surface_id": "5e78cb10887a95ade43c5763562a63cb00c94ec7ddcae88c734c3a033ee9af3d",
+      "raw_tree_hash": "725dd00707f50ae7fcd691ee23d9368bddc76b4563240d5771c7f5cf85fdd35a",
+      "atoms_raw_count": 794,
+      "atoms_canonical_count": 36,
+      "atoms_surface_count": 10,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "new message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "send message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture aleena__1991 you: ru in pune 16 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture bhavya 🌻 reacted 🤣 to your message 6 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture unmesh jadhav yes yr 2 hours ago unread",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "varad.th verified down chevron icon",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "general",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "primary",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "requests",
+          "attrs": {}
+        }
+      ],
+      "canonical_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "loading... loading... loading...",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "maharashtra day 🚩 aniketsatpute__'s profile picture aniket satpute | traveller ",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "new message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "obsessed with... your note",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "send message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture adarsh nair you sent an attachment. 3 hours ago muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture aleena__1991 you: ru in pune 16 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture animesh landge animesh sent an attachment. 22 minutes ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture ar. alpee thakur you sent an attachment. 3 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture bhavya 🌻 reacted 🤣 to your message 6 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture chaitanya lad chaitanya sent an attachment. 34 minutes ago ",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture e you sent an attachment. 15 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture risingsunland 4 new messages about an hour ago unread",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture tanya gureja you: in pune ? 15 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture unmesh jadhav yes yr 2 hours ago unread",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture user-profile-picture everyone is imp you sent an attachment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture भुमी🌻 you sent an attachment. 51 minutes ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "varad.th verified down chevron icon",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "also from meta",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aniketsatpute__'s profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "explore",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "home",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "instagram",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "messages direct messaging – 4 new notifications link",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "new post",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "notifications",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "professional dashboard",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "search",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "settings",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "general",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "primary",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "requests",
+          "attrs": {}
+        },
+        {
+          "role": "textbox",
+          "accessible_name": "search",
+          "attrs": {}
+        }
+      ],
+      "screenshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T09-29-48-574Z/screenshots/0002-5e78cb10887a.png",
+      "snapshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T09-29-48-574Z/snapshots/0002-5e78cb10887a.json"
+    },
+    {
+      "index": 3,
+      "captured_at": "2026-05-01T09:29:52.622Z",
+      "url": "https://www.instagram.com/direct/inbox/",
+      "title": "(4) Instagram • Messages",
+      "viewport": null,
+      "kind": "panel",
+      "state_id": "7fb5d9465c54e53b6e811b0248801508eb00c86fa39957b9571ce32d67451578",
+      "surface_id": "5e78cb10887a95ade43c5763562a63cb00c94ec7ddcae88c734c3a033ee9af3d",
+      "raw_tree_hash": "725dd00707f50ae7fcd691ee23d9368bddc76b4563240d5771c7f5cf85fdd35a",
+      "atoms_raw_count": 794,
+      "atoms_canonical_count": 36,
+      "atoms_surface_count": 10,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "new message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "send message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture aleena__1991 you: ru in pune 16 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture bhavya 🌻 reacted 🤣 to your message 6 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture unmesh jadhav yes yr 2 hours ago unread",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "varad.th verified down chevron icon",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "general",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "primary",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "requests",
+          "attrs": {}
+        }
+      ],
+      "canonical_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "loading... loading... loading...",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "maharashtra day 🚩 aniketsatpute__'s profile picture aniket satpute | traveller ",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "new message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "obsessed with... your note",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "send message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture adarsh nair you sent an attachment. 3 hours ago muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture aleena__1991 you: ru in pune 16 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture animesh landge animesh sent an attachment. 22 minutes ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture ar. alpee thakur you sent an attachment. 3 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture bhavya 🌻 reacted 🤣 to your message 6 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture chaitanya lad chaitanya sent an attachment. 34 minutes ago ",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture e you sent an attachment. 15 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture risingsunland 4 new messages about an hour ago unread",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture tanya gureja you: in pune ? 15 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture unmesh jadhav yes yr 2 hours ago unread",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture user-profile-picture everyone is imp you sent an attachment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture भुमी🌻 you sent an attachment. 51 minutes ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "varad.th verified down chevron icon",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "also from meta",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aniketsatpute__'s profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "explore",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "home",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "instagram",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "messages direct messaging – 4 new notifications link",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "new post",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "notifications",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "professional dashboard",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "search",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "settings",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "general",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "primary",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "requests",
+          "attrs": {}
+        },
+        {
+          "role": "textbox",
+          "accessible_name": "search",
+          "attrs": {}
+        }
+      ],
+      "screenshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T09-29-48-574Z/screenshots/0003-5e78cb10887a.png",
+      "snapshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T09-29-48-574Z/snapshots/0003-5e78cb10887a.json"
+    },
+    {
+      "index": 4,
+      "captured_at": "2026-05-01T09:29:54.171Z",
+      "url": "https://www.instagram.com/direct/inbox/",
+      "title": "(4) Instagram • Messages",
+      "viewport": null,
+      "kind": "panel",
+      "state_id": "7fb5d9465c54e53b6e811b0248801508eb00c86fa39957b9571ce32d67451578",
+      "surface_id": "5e78cb10887a95ade43c5763562a63cb00c94ec7ddcae88c734c3a033ee9af3d",
+      "raw_tree_hash": "725dd00707f50ae7fcd691ee23d9368bddc76b4563240d5771c7f5cf85fdd35a",
+      "atoms_raw_count": 794,
+      "atoms_canonical_count": 36,
+      "atoms_surface_count": 10,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "new message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "send message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture aleena__1991 you: ru in pune 16 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture bhavya 🌻 reacted 🤣 to your message 6 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture unmesh jadhav yes yr 2 hours ago unread",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "varad.th verified down chevron icon",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "general",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "primary",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "requests",
+          "attrs": {}
+        }
+      ],
+      "canonical_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "loading... loading... loading...",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "maharashtra day 🚩 aniketsatpute__'s profile picture aniket satpute | traveller ",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "new message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "obsessed with... your note",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "send message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture adarsh nair you sent an attachment. 3 hours ago muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture aleena__1991 you: ru in pune 16 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture animesh landge animesh sent an attachment. 22 minutes ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture ar. alpee thakur you sent an attachment. 3 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture bhavya 🌻 reacted 🤣 to your message 6 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture chaitanya lad chaitanya sent an attachment. 34 minutes ago ",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture e you sent an attachment. 15 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture risingsunland 4 new messages about an hour ago unread",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture tanya gureja you: in pune ? 15 hours ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture unmesh jadhav yes yr 2 hours ago unread",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture user-profile-picture everyone is imp you sent an attachment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "user-profile-picture भुमी🌻 you sent an attachment. 51 minutes ago",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "varad.th verified down chevron icon",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "also from meta",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "aniketsatpute__'s profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "explore",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "home",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "instagram",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "messages direct messaging – 4 new notifications link",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "new post",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "notifications",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "professional dashboard",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "reels",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "search",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "settings",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "link",
+          "accessible_name": "varad.th's profile picture",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "general",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "primary",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "requests",
+          "attrs": {}
+        },
+        {
+          "role": "textbox",
+          "accessible_name": "search",
+          "attrs": {}
+        }
+      ],
+      "screenshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T09-29-48-574Z/screenshots/0004-5e78cb10887a.png",
+      "snapshot_path": "/Users/varad/V/repo/siteforge/.siteforge/inspections/2026-05-01T09-29-48-574Z/snapshots/0004-5e78cb10887a.json"
+    }
+  ]
+}

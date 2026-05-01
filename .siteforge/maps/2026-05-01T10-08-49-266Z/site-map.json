@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-05-01T10:08:52.728Z",
+  "updated_at": "2026-05-01T10:14:34.599Z",
+  "start_url": "https://www.instagram.com/",
+  "nodes": {
+    "b561af8c704a2f41e30b0aa494e45a2a92cdf2868b74e968c3b2dc9db7004be8": {
+      "id": "b561af8c704a2f41e30b0aa494e45a2a92cdf2868b74e968c3b2dc9db7004be8",
+      "kind": "list",
+      "label": "/",
+      "first_seen": "2026-05-01T10:08:53.443Z",
+      "last_seen": "2026-05-01T10:08:53.443Z",
+      "visits": 1,
+      "url_samples": [
+        "https://www.instagram.com/"
+      ],
+      "state_ids": [
+        "7db168664eb1c92cc5de45bd099a6222d1e616e21348005ef1c1d991f69a263a"
+      ],
+      "raw_atoms_count": 1497,
+      "canonical_atoms_count": 205,
+      "surface_atoms_count": 6,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        }
+      ],
+      "capture_paths": [
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T10-08-49-266Z/captures/0001-b561af8c704a.json"
+      ]
+    },
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945": {
+      "id": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "kind": "panel",
+      "label": "/direct/inbox/",
+      "first_seen": "2026-05-01T10:12:12.421Z",
+      "last_seen": "2026-05-01T10:12:12.421Z",
+      "visits": 1,
+      "url_samples": [
+        "https://www.instagram.com/direct/inbox/"
+      ],
+      "state_ids": [
+        "ccab57c25b11b9ab6c160d5a2db36fea31d5066847c47c86f87f785d3733e80a"
+      ],
+      "raw_atoms_count": 228,
+      "canonical_atoms_count": 13,
+      "surface_atoms_count": 0,
+      "surface_atoms": [],
+      "capture_paths": [
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T10-08-49-266Z/captures/0002-4f53cda18c2b.json"
+      ]
+    },
+    "80e3d352c8510610347d425bd515c2171a8563749496b708a51e0ad9b7ea2714": {
+      "id": "80e3d352c8510610347d425bd515c2171a8563749496b708a51e0ad9b7ea2714",
+      "kind": "panel",
+      "label": "/direct/t/110847966976118/",
+      "first_seen": "2026-05-01T10:12:14.634Z",
+      "last_seen": "2026-05-01T10:12:14.634Z",
+      "visits": 1,
+      "url_samples": [
+        "https://www.instagram.com/direct/t/110847966976118/"
+      ],
+      "state_ids": [
+        "084141dcf578cdecc4101ce943a01cc82f4290354c38e450584d4da388b23c0c"
+      ],
+      "raw_atoms_count": 1012,
+      "canonical_atoms_count": 53,
+      "surface_atoms_count": 11,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "audio call",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "choose a gif or sticker",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "choose an emoji",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "conversation information",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "new message",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "account menu",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "video call",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "general",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "primary",
+          "attrs": {}
+        },
+        {
+          "role": "tab",
+          "accessible_name": "requests",
+          "attrs": {}
+        },
+        {
+          "role": "textbox",
+          "accessible_name": "message...",
+          "attrs": {}
+        }
+      ],
+      "capture_paths": [
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T10-08-49-266Z/captures/0003-80e3d352c851.json"
+      ]
+    }
+  },
+  "edges": [
+    {
+      "id": "b561af8c704a->4f53cda18c2b",
+      "from": "b561af8c704a2f41e30b0aa494e45a2a92cdf2868b74e968c3b2dc9db7004be8",
+      "to": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "count": 1,
+      "first_seen": "2026-05-01T10:12:12.424Z",
+      "last_seen": "2026-05-01T10:12:12.424Z",
+      "from_url": "https://www.instagram.com/",
+      "to_url": "https://www.instagram.com/direct/inbox/",
+      "op_type": "click",
+      "last_click": {
+        "text": "Messages5Messages",
+        "href": "https://www.instagram.com/direct/inbox/",
+        "role": "link",
+        "at": 1777630331063
+      }
+    },
+    {
+      "id": "4f53cda18c2b->80e3d352c851",
+      "from": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "to": "80e3d352c8510610347d425bd515c2171a8563749496b708a51e0ad9b7ea2714",
+      "count": 1,
+      "first_seen": "2026-05-01T10:12:14.634Z",
+      "last_seen": "2026-05-01T10:12:14.634Z",
+      "from_url": "https://www.instagram.com/direct/inbox/",
+      "to_url": "https://www.instagram.com/direct/t/110847966976118/",
+      "op_type": "click",
+      "last_click": {
+        "text": "Animesh LandgeAnimesh sent an attachment. · 3mUnreadMore options",
+        "href": null,
+        "role": "button",
+        "at": 1777630334010
+      }
+    }
+  ]
+}

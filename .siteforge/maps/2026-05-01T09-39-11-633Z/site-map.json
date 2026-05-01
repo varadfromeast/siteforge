@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-05-01T09:39:16.973Z",
+  "updated_at": "2026-05-01T09:40:34.311Z",
+  "start_url": "https://www.instagram.com/",
+  "nodes": {
+    "98e53ae11dc6045137182e07d0b8989b61ce5b2544877446622d910869acda71": {
+      "id": "98e53ae11dc6045137182e07d0b8989b61ce5b2544877446622d910869acda71",
+      "kind": "list",
+      "label": "/",
+      "first_seen": "2026-05-01T09:39:17.681Z",
+      "last_seen": "2026-05-01T09:39:17.681Z",
+      "visits": 1,
+      "url_samples": [
+        "https://www.instagram.com/"
+      ],
+      "state_ids": [
+        "ff37120b6317ad75d743f61ecabd45abfce47eece27cbbda58ff8ebc4af7ca83"
+      ],
+      "raw_atoms_count": 1531,
+      "canonical_atoms_count": 204,
+      "surface_atoms_count": 10,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "audio is muted",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "comment",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "follow",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "like",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "more options",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "repost",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "save",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "share",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "switch",
+          "attrs": {}
+        }
+      ],
+      "capture_paths": [
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T09-39-11-633Z/captures/0001-98e53ae11dc6.json"
+      ]
+    }
+  },
+  "edges": []
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-05-01T10:18:27.309Z",
+  "updated_at": "2026-05-01T10:22:10.866Z",
+  "start_url": "https://www.instagram.com/direct/t/110847966976118/",
+  "nodes": {
+    "6b0335da44975f23e83654010df31e2e2b12c5bcaa9580afb9ca6598a371604d": {
+      "id": "6b0335da44975f23e83654010df31e2e2b12c5bcaa9580afb9ca6598a371604d",
+      "kind": "panel",
+      "label": "/direct/t/110847966976118/",
+      "first_seen": "2026-05-01T10:18:28.036Z",
+      "last_seen": "2026-05-01T10:18:28.036Z",
+      "visits": 1,
+      "url_samples": [
+        "https://www.instagram.com/direct/t/110847966976118/"
+      ],
+      "state_ids": [
+        "e08d37b9d539fb5403e82c1697ecba8ff6e525e9829fce806d19fc1ddda78547"
+      ],
+      "raw_atoms_count": 1012,
+      "canonical_atoms_count": 53,
+      "surface_atoms_count": 8,
+      "surface_atoms": [
+        {
+          "role": "button",
+          "accessible_name": "add photo or video",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "audio call",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "choose a gif or sticker",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "choose an emoji",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "conversation information",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "video call",
+          "attrs": {}
+        },
+        {
+          "role": "button",
+          "accessible_name": "voice clip",
+          "attrs": {}
+        },
+        {
+          "role": "textbox",
+          "accessible_name": "message...",
+          "attrs": {}
+        }
+      ],
+      "capture_paths": [
+        "/Users/varad/V/repo/siteforge/.siteforge/maps/2026-05-01T10-18-22-541Z/captures/0001-6b0335da4497.json"
+      ]
+    }
+  },
+  "edges": []
+}

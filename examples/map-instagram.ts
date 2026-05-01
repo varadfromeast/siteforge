@@ -295,9 +295,15 @@ async function captureCurrent(page: Page): Promise<CaptureRecord> {
   await page.waitForLoadState('domcontentloaded').catch(() => undefined);
   await page.waitForTimeout(600);
 
-  const snap = await captureSnapshot(page);
-  const canonical = canonicalizeAtoms(snap.atoms);
-  const surface = surfaceAtoms(canonical, snap.url);
+  let snap = await captureSnapshot(page);
+  let canonical = canonicalizeAtoms(snap.atoms);
+  let surface = surfaceAtoms(canonical, snap.url);
+  for (let attempt = 0; attempt < 6 && (canonical.length === 0 || surface.length === 0); attempt++) {
+    await page.waitForTimeout(750);
+    snap = await captureSnapshot(page);
+    canonical = canonicalizeAtoms(snap.atoms);
+    surface = surfaceAtoms(canonical, snap.url);
+  }
   const stateId = hashAtomSet(canonical);
   const surfaceId = hashAtomSet(surface);
   const kind = classifyState(snap);
