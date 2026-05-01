@@ -7,7 +7,16 @@ import type { Atom } from '../core/types.js';
  */
 export function surfaceAtoms(atoms: Atom[], pageUrl: string): Atom[] {
   const handle = handleFromProfileUrl(pageUrl);
-  const filtered = atoms.filter((atom) => {
+
+  // Step 1: normalize accessible names to collapse icon+label-doubled forms
+  // ("home home" -> "home", "professional dashboard dashboard" -> ..., etc.)
+  const normalized = atoms.map((atom) => ({
+    ...atom,
+    accessible_name: dedupeRepeatedPhrase(atom.accessible_name),
+  }));
+
+  // Step 2: drop atoms that are noise / content / chrome.
+  const filtered = normalized.filter((atom) => {
     if (!['button', 'link', 'tab', 'textbox', 'searchbox', 'combobox'].includes(atom.role)) {
       return false;
     }
@@ -17,18 +26,51 @@ export function surfaceAtoms(atoms: Atom[], pageUrl: string): Atom[] {
     if (isFeedTimestamp(atom)) return false;
     if (isSocialAggregate(name)) return false;
     if (isMediaPlaceholder(atom)) return false;
-    if (isFooterChrome(name)) return false;
+    if (isFooterChrome(atom)) return false;
     if (isCaptionLink(atom)) return false;
     if (isRepeatedSuggestionAction(name)) return false;
     if (isGlobalChrome(name)) return false;
     if (isContentItem(atom, handle)) return false;
     if (isSocialCounter(name)) return false;
     if (isTransientAccountUi(name)) return false;
+    if (isOtherUserHandle(atom, handle)) return false;
 
     return true;
   });
 
   return uniqueAtoms(filtered);
+}
+
+/**
+ * Collapse two patterns IG produces because of icon + text-label rendering
+ * in its accessibility tree:
+ *
+ *   "home home"                              -> "home"
+ *   "explore explore"                        -> "explore"
+ *   "professional dashboard dashboard"       -> "professional dashboard"
+ *   "also from meta also from meta"          -> "also from meta"
+ *
+ * These previously caused profile pages with a collapsed-vs-expanded side nav
+ * to produce different surface hashes for the same logical state.
+ */
+function dedupeRepeatedPhrase(name: string): string {
+  const words = name.split(' ');
+  if (words.length < 2) return name;
+
+  // "X X" or "A B A B" — name is two equal halves.
+  if (words.length % 2 === 0) {
+    const half = words.length / 2;
+    const front = words.slice(0, half).join(' ');
+    const back = words.slice(half).join(' ');
+    if (front === back) return front;
+  }
+
+  // "ABC C" — last word duplicated. ("...dashboard dashboard" tail.)
+  if (words[words.length - 1] === words[words.length - 2]) {
+    return words.slice(0, -1).join(' ');
+  }
+
+  return name;
 }
 
 function isGlobalChrome(name: string): boolean {
@@ -37,26 +79,29 @@ function isGlobalChrome(name: string): boolean {
     'api',
     'blog',
     'contact uploading and non-users',
+    'contact uploading & non-users',
+    'consumer health privacy',
     'explore',
     'home',
     'instagram',
+    'instagram lite',
     'jobs',
     'help',
     'meta',
     'meta ai',
+    'meta verified',
     'new post',
+    'new post create',
     'notifications',
     'popular',
-    'professional dashboard',
     'privacy',
+    'professional dashboard',
     'search',
     'settings',
+    'settings more',
     'terms',
     'locations',
-    'instagram lite',
     'threads',
-    'contact uploading & non-users',
-    'meta verified',
     'also from meta',
     'switch display language',
   ].includes(name);
@@ -136,8 +181,14 @@ function isMediaPlaceholder(atom: Atom): boolean {
 /**
  * Footer + signup affordances that appear on logged-out / shell views and
  * sometimes leak into logged-in surfaces.
+ *
+ * Role-restricted to `link` so we never accidentally drop the **primary
+ * action button** on a real form (e.g. the actual "Log in" button on the
+ * login page, or "Log in with Facebook" — both `button` role).
  */
-function isFooterChrome(name: string): boolean {
+function isFooterChrome(atom: Atom): boolean {
+  if (atom.role !== 'link') return false;
+  const name = atom.accessible_name;
   if (name === 'language' || name === 'press' || name === 'careers') return true;
   if (/^sign up\b/.test(name)) return true;
   if (/^log in\b/.test(name)) return true;
@@ -156,6 +207,35 @@ function isCaptionLink(atom: Atom): boolean {
   return /[.!?]\s|\s•\s|#\w+\s+#\w+/.test(name);
 }
 
+/**
+ * Username-shaped link atoms. Drops them unconditionally **unless** they
+ * equal the currently-viewed handle (the "I am on /<handle>/" hint that IG
+ * renders inside the profile chrome).
+ *
+ * Earlier this only fired through `isContentItem`, which guarded the same
+ * test with `currentHandle !== null`. On the home feed (`/`), currentHandle
+ * is null, so suggested-user, feed-author, and commenter usernames *all*
+ * leaked into the surface — which is exactly why the home feed produced 6+
+ * separate nodes per map run.
+ */
+function isOtherUserHandle(atom: Atom, currentHandle: string | null): boolean {
+  if (atom.role !== 'link') return false;
+
+  const name = atom.accessible_name;
+  if (['posts', 'reels', 'reposts', 'tagged', 'follow', 'message', 'options'].includes(name)) {
+    return false;
+  }
+
+  if (!/^[a-z0-9._]{2,30}$/.test(name) && !/^@[a-z0-9._]{2,30}$/.test(name)) return false;
+  const normalized = name.replace(/^@/, '');
+  return normalized !== currentHandle;
+}
+
+/**
+ * Kept for backwards compat: still called from `isContentItem`. Same logic
+ * as `isOtherUserHandle` above. The unconditional check is the new primary
+ * defender against username-link bloat.
+ */
 function isOtherProfileHandle(atom: Atom, currentHandle: string | null): boolean {
   if (atom.role !== 'link') return false;
 
@@ -166,7 +246,7 @@ function isOtherProfileHandle(atom: Atom, currentHandle: string | null): boolean
 
   if (!/^[a-z0-9._]{2,30}$/.test(name) && !/^@[a-z0-9._]{2,30}$/.test(name)) return false;
   const normalized = name.replace(/^@/, '');
-  return currentHandle !== null && normalized !== currentHandle;
+  return normalized !== currentHandle;
 }
 
 function isEmojiOnly(name: string): boolean {
