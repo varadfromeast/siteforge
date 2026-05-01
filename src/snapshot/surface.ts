@@ -13,6 +13,12 @@ export function surfaceAtoms(atoms: Atom[], pageUrl: string): Atom[] {
     }
 
     const name = atom.accessible_name;
+    if (isStoryDrawerButton(name)) return false;
+    if (isFeedTimestamp(atom)) return false;
+    if (isSocialAggregate(name)) return false;
+    if (isMediaPlaceholder(atom)) return false;
+    if (isFooterChrome(name)) return false;
+    if (isCaptionLink(atom)) return false;
     if (isRepeatedSuggestionAction(name)) return false;
     if (isGlobalChrome(name)) return false;
     if (isContentItem(atom, handle)) return false;
@@ -90,6 +96,64 @@ function isTransientAccountUi(name: string): boolean {
 
 function isRepeatedSuggestionAction(name: string): boolean {
   return name === 'dismiss' || name === 'see all' || name === 'next';
+}
+
+/**
+ * "story by alpeethakur, not seen" / "story by deonddddd, seen"
+ * Rotates with whoever posted a story. Drop.
+ */
+function isStoryDrawerButton(name: string): boolean {
+  return /^story by\s.+/.test(name);
+}
+
+/**
+ * Feed post timestamp links: "10 h", "4 d", "6 d", "2 w", "1 mo".
+ * They tick over and re-shuffle, so they wreck surface stability.
+ */
+function isFeedTimestamp(atom: Atom): boolean {
+  if (atom.role !== 'link') return false;
+  return /^\d+\s*(?:s|sec|m|min|h|hr|hrs|d|day|days|w|wk|wks|mo|months?|y|yr|yrs)$/.test(
+    atom.accessible_name,
+  );
+}
+
+/**
+ * "1,605 others", "27 others" — counters from feed activity strips.
+ */
+function isSocialAggregate(name: string): boolean {
+  return /^\d[\d,.]*\s+others$/.test(name);
+}
+
+/**
+ * Generic media placeholders that appear once per visible post.
+ */
+function isMediaPlaceholder(atom: Atom): boolean {
+  if (atom.role !== 'link') return false;
+  const name = atom.accessible_name;
+  return name === 'media thumbnail' || name === 'video player' || name === 'thumbnail';
+}
+
+/**
+ * Footer + signup affordances that appear on logged-out / shell views and
+ * sometimes leak into logged-in surfaces.
+ */
+function isFooterChrome(name: string): boolean {
+  if (name === 'language' || name === 'press' || name === 'careers') return true;
+  if (/^sign up\b/.test(name)) return true;
+  if (/^log in\b/.test(name)) return true;
+  return false;
+}
+
+/**
+ * Long captions that IG renders as link role rather than text. They carry
+ * post content (emoji, hashtags, copy), not navigation identity.
+ */
+function isCaptionLink(atom: Atom): boolean {
+  if (atom.role !== 'link') return false;
+  const name = atom.accessible_name;
+  if (name.length < 20) return false;
+  // Heuristic: contains a sentence-end, multi-word hashtag run, or bullet.
+  return /[.!?]\s|\s•\s|#\w+\s+#\w+/.test(name);
 }
 
 function isOtherProfileHandle(atom: Atom, currentHandle: string | null): boolean {
