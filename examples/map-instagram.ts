@@ -170,12 +170,16 @@ async function openBrowserSession(): Promise<BrowserSession> {
   if (cdpUrl) {
     console.log(`[siteforge-map] attaching to Chrome via CDP: ${cdpUrl}`);
     const browser = await chromium.connectOverCDP(cdpUrl);
-    const context = browser.contexts()[0] ?? (await browser.newContext({ viewport: { width: 1280, height: 900 } }));
+    // We're attaching to a Chrome window the user owns. Do NOT force a
+    // fixed viewport — Page.setViewportSize() resizes the actual rendered
+    // viewport, which on the user's own window cropped the page so the
+    // footer / lower buttons disappeared off-screen. Use `viewport: null`
+    // on any new context so it inherits the real window size.
+    const context = browser.contexts()[0] ?? (await browser.newContext({ viewport: null }));
     const page =
       context.pages().find((candidate) => candidate.url().includes('instagram.com')) ??
       context.pages()[0] ??
       (await context.newPage());
-    await page.setViewportSize({ width: 1280, height: 900 }).catch(() => undefined);
     return { browser, context, page, attached: true };
   }
 
