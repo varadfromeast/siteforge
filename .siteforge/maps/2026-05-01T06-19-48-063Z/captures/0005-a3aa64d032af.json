@@ -1,0 +1,2021 @@
+{
+  "url": "https://www.instagram.com/stories/deonddddd/3887238655328922402/",
+  "kind": "modal",
+  "state_id": "d24e72e336d783951a0d05f4d79d57c5b0032ef7a85139edafb2d0d788a807dd",
+  "surface_id": "a3aa64d032afae8afd42dfa9c428a80942761c5fd50cf6b3b79d65974323bb3d",
+  "raw_tree_hash": "ba9e64a4d4902acff8a60f2aa2223289ec524d30117b65ade87f921ae95a15f8",
+  "atoms_raw_count": 371,
+  "atoms_canonical_count": 14,
+  "atoms_surface_count": 10,
+  "raw_atoms": [
+    {
+      "role": "RootWebArea",
+      "accessible_name": "Stories • Instagram",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "link",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "link",
+      "accessible_name": "deonddddd",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "StaticText",
+      "accessible_name": "deonddddd",
+      "attrs": {}
+    },
+    {
+      "role": "InlineTextBox",
+      "accessible_name": "deonddddd",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "time",
+      "accessible_name": "",
+      "attrs": {
+        "description": "1 May 2026"
+      }
+    },
+    {
+      "role": "StaticText",
+      "accessible_name": "23 m",
+      "attrs": {}
+    },
+    {
+      "role": "InlineTextBox",
+      "accessible_name": "23 m",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "slider",
+      "accessible_name": "Adjust volume",
+      "attrs": {
+        "value": "0"
+      }
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "button",
+      "accessible_name": "Audio is muted",
+      "attrs": {}
+    },
+    {
+      "role": "image",
+      "accessible_name": "Audio is muted",
+      "attrs": {
+        "description": "Audio is muted"
+      }
+    },
+    {
+      "role": "button",
+      "accessible_name": "Pause",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "image",
+      "accessible_name": "Pause",
+      "attrs": {
+        "description": "Pause"
+      }
+    },
+    {
+      "role": "button",
+      "accessible_name": "Menu",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "image",
+      "accessible_name": "Menu",
+      "attrs": {
+        "description": "Menu"
+      }
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "Video",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "group",
+      "accessible_name": "Video player",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "button",
+      "accessible_name": "",
+      "attrs": {
+        "expanded": "false"
+      }
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "textbox",
+      "accessible_name": "Reply to deonddddd...",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "button",
+      "accessible_name": "Like",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "image",
+      "accessible_name": "Like",
+      "attrs": {
+        "description": "Like"
+      }
+    },
+    {
+      "role": "button",
+      "accessible_name": "Direct",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "image",
+      "accessible_name": "Direct",
+      "attrs": {
+        "description": "Direct"
+      }
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "button",
+      "accessible_name": "Previous",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "image",
+      "accessible_name": "Previous",
+      "attrs": {
+        "description": "Previous"
+      }
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "button",
+      "accessible_name": "Next",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "image",
+      "accessible_name": "Next",
+      "attrs": {
+        "description": "Next"
+      }
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "link",
+      "accessible_name": "Photo by Roy (Chungin) Lee on April 30, 2026. May be a meme of one or more people and text that says \"$1,000 OPPORTUNITY FOR Gcluely IM LOOKING FOR 10 dudes who willing to learn how to make content and free NEXT WEEK i will fly u out, house u, feed u in nyc and pay u $1k all u have to do is record urself reading pre-written scripts in front of a camera to apply, record urself saying your name age and location and send vid to hello @cluely.com .com AИ\". im_roy_lee 32 m",
+      "attrs": {}
+    },
+    {
+      "role": "image",
+      "accessible_name": "Photo by Roy (Chungin) Lee on April 30, 2026. May be a meme of one or more people and text that says \"$1,000 OPPORTUNITY FOR Gcluely IM LOOKING FOR 10 dudes who willing to learn how to make content and free NEXT WEEK i will fly u out, house u, feed u in nyc and pay u $1k all u have to do is record urself reading pre-written scripts in front of a camera to apply, record urself saying your name age and location and send vid to hello @cluely.com .com AИ\".",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "Canvas",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "StaticText",
+      "accessible_name": "im_roy_lee",
+      "attrs": {}
+    },
+    {
+      "role": "InlineTextBox",
+      "accessible_name": "im_roy_lee",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "time",
+      "accessible_name": "",
+      "attrs": {
+        "description": "1 May 2026"
+      }
+    },
+    {
+      "role": "StaticText",
+      "accessible_name": "32 m",
+      "attrs": {}
+    },
+    {
+      "role": "InlineTextBox",
+      "accessible_name": "32 m",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "link",
+      "accessible_name": "planify_x Ad",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "StaticText",
+      "accessible_name": "planify_x",
+      "attrs": {}
+    },
+    {
+      "role": "InlineTextBox",
+      "accessible_name": "planify_x",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "StaticText",
+      "accessible_name": "Ad",
+      "attrs": {}
+    },
+    {
+      "role": "InlineTextBox",
+      "accessible_name": "Ad",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "link",
+      "accessible_name": "Instagram",
+      "attrs": {}
+    },
+    {
+      "role": "image",
+      "accessible_name": "Instagram",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "button",
+      "accessible_name": "Close",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "image",
+      "accessible_name": "Close",
+      "attrs": {
+        "description": "Close"
+      }
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "generic",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    },
+    {
+      "role": "none",
+      "accessible_name": "",
+      "attrs": {}
+    }
+  ],
+  "canonical_atoms": [
+    {
+      "role": "button",
+      "accessible_name": "audio is muted",
+      "attrs": {}
+    },
+    {
+      "role": "button",
+      "accessible_name": "close",
+      "attrs": {}
+    },
+    {
+      "role": "button",
+      "accessible_name": "direct",
+      "attrs": {}
+    },
+    {
+      "role": "button",
+      "accessible_name": "like",
+      "attrs": {}
+    },
+    {
+      "role": "button",
+      "accessible_name": "menu",
+      "attrs": {}
+    },
+    {
+      "role": "button",
+      "accessible_name": "next",
+      "attrs": {}
+    },
+    {
+      "role": "button",
+      "accessible_name": "pause",
+      "attrs": {}
+    },
+    {
+      "role": "button",
+      "accessible_name": "previous",
+      "attrs": {}
+    },
+    {
+      "role": "link",
+      "accessible_name": "deonddddd",
+      "attrs": {}
+    },
+    {
+      "role": "link",
+      "accessible_name": "instagram",
+      "attrs": {}
+    },
+    {
+      "role": "link",
+      "accessible_name": "photo by roy (chungin) lee on april 30, 2026. may be a meme of one or more peopl",
+      "attrs": {}
+    },
+    {
+      "role": "link",
+      "accessible_name": "planify_x ad",
+      "attrs": {}
+    },
+    {
+      "role": "slider",
+      "accessible_name": "adjust volume",
+      "attrs": {}
+    },
+    {
+      "role": "textbox",
+      "accessible_name": "reply to deonddddd...",
+      "attrs": {}
+    }
+  ],
+  "surface_atoms": [
+    {
+      "role": "button",
+      "accessible_name": "audio is muted",
+      "attrs": {}
+    },
+    {
+      "role": "button",
+      "accessible_name": "close",
+      "attrs": {}
+    },
+    {
+      "role": "button",
+      "accessible_name": "direct",
+      "attrs": {}
+    },
+    {
+      "role": "button",
+      "accessible_name": "like",
+      "attrs": {}
+    },
+    {
+      "role": "button",
+      "accessible_name": "menu",
+      "attrs": {}
+    },
+    {
+      "role": "button",
+      "accessible_name": "pause",
+      "attrs": {}
+    },
+    {
+      "role": "button",
+      "accessible_name": "previous",
+      "attrs": {}
+    },
+    {
+      "role": "link",
+      "accessible_name": "deonddddd",
+      "attrs": {}
+    },
+    {
+      "role": "link",
+      "accessible_name": "planify_x ad",
+      "attrs": {}
+    },
+    {
+      "role": "textbox",
+      "accessible_name": "reply to deonddddd...",
+      "attrs": {}
+    }
+  ],
+  "last_click": {
+    "text": "Next",
+    "href": null,
+    "role": "img",
+    "at": 1777616415187
+  }
+}
