@@ -108,9 +108,20 @@ function classifyByUrl(url: string): StateKind | null {
   // Direct messages live in a side panel surface.
   if (/^\/direct\//.test(path)) return 'panel';
 
-  // Post / reel detail can be either a true page or a modal overlay; let
-  // atom-based fallback decide (it checks for `dialog` role).
+  // Post / reel detail (singular path: /p/<id>/, /reel/<id>/) can be either
+  // a true page or a modal overlay; let atom-based fallback decide (it
+  // checks for `dialog` role).
   if (/^\/(p|reel)\//.test(path)) return null;
+
+  // Reels family.
+  // /reels/                 → list (the public reels feed surface)
+  // /reels/<id>/            → page (the standalone reel viewer; before this
+  //                           was misclassified as `form` because the
+  //                           comment composer has a form-role wrapper and
+  //                           IG's nav has a searchbox, which together
+  //                           tripped the atom-based looksLikeForm heuristic)
+  if (/^\/reels\/?$/.test(path)) return 'list';
+  if (/^\/reels\/[^/]+\/?$/.test(path)) return 'page';
 
   // Feeds and lists.
   if (path === '/' || path === '') return 'list';
