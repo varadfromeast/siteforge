@@ -1,5 +1,15 @@
 /**
  * Snapshot self-check — synthetic checks for classifyState/snapshotToState.
+ *
+ * Two URL flavours are used deliberately:
+ *
+ *  - `https://example.com/`   exercises the **atom-based fallback** path.
+ *                             classifyByUrl ignores non-IG hostnames.
+ *  - `https://www.instagram.com/...`  exercises the **URL-pattern** path.
+ *
+ * Overlay tests (dialog/alert) use the IG URL on purpose because overlay
+ * detection runs *before* URL dispatch — a dialog on a profile is a modal,
+ * not a profile.
  */
 
 import { canonicalizeAtoms, hashAtomSet } from '../src/core/index.js';
@@ -18,7 +28,7 @@ function assert(cond: boolean, msg: string): void {
   }
 }
 
-function snapshot(atoms: Atom[], url = 'https://www.instagram.com/someone/'): SnapshotResult {
+function snapshot(atoms: Atom[], url = 'https://example.com/'): SnapshotResult {
   return {
     raw_tree: JSON.stringify(atoms),
     xpath_map: {},
@@ -29,10 +39,27 @@ function snapshot(atoms: Atom[], url = 'https://www.instagram.com/someone/'): Sn
 }
 
 console.log('\n[snapshot] classifyState');
+// Overlay path: dialog/alert beat URL even on a profile URL.
 assert(
-  classifyState(snapshot([{ role: 'dialog', accessible_name: 'Share', attrs: {} }])) === 'modal',
-  'dialog role → modal',
+  classifyState(
+    snapshot(
+      [{ role: 'dialog', accessible_name: 'Share', attrs: {} }],
+      'https://www.instagram.com/someone/',
+    ),
+  ) === 'modal',
+  'dialog role → modal (even on a profile URL)',
 );
+assert(
+  classifyState(
+    snapshot(
+      [{ role: 'alert', accessible_name: 'Something went wrong', attrs: {} }],
+      'https://www.instagram.com/someone/',
+    ),
+  ) === 'error',
+  'alert role → error (even on a profile URL)',
+);
+
+// Atom fallback path: neutral URL so URL dispatch returns null.
 assert(
   classifyState(
     snapshot([
@@ -40,16 +67,22 @@ assert(
       { role: 'button', accessible_name: 'Send', attrs: {} },
     ]),
   ) === 'form',
-  'input plus submit-like button → form',
-);
-assert(
-  classifyState(snapshot([{ role: 'alert', accessible_name: 'Something went wrong', attrs: {} }])) ===
-    'error',
-  'alert role → error',
+  'input plus submit-like button → form (atom fallback)',
 );
 assert(
   classifyState(snapshot([{ role: 'feed', accessible_name: 'Posts', attrs: {} }])) === 'list',
-  'feed role → list',
+  'feed role → list (atom fallback)',
+);
+
+// URL-pattern path: IG profile URL, ordinary atoms.
+assert(
+  classifyState(
+    snapshot(
+      [{ role: 'button', accessible_name: 'Follow', attrs: {} }],
+      'https://www.instagram.com/someone/',
+    ),
+  ) === 'page',
+  'IG profile URL → page',
 );
 
 console.log('\n[snapshot] snapshotToState');

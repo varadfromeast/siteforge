@@ -19,15 +19,21 @@ import type { SnapshotResult } from './types.js';
 /**
  * Decide the StateKind of a snapshot.
  *
- * URL pattern is checked first because it produces stable, repeatable
- * classifications across visits. Atom-based fallback runs only for URLs we
- * don't recognise.
+ * Order of dispatch:
+ *   1. Strong **overlay** signals (alert/dialog/error). A dialog opened on a
+ *      profile is a modal, not a profile — overlays trump URL.
+ *   2. **URL pattern**. Stable, repeatable, fast for Instagram families.
+ *   3. **Atom-based fallback**. Only runs when URL doesn't match any known
+ *      pattern (other domains, deep-links we don't recognise).
  *
- * Earlier versions classified ~58% of states as `form` because Instagram's
- * shared nav search box and per-post comment composers tripped a generic
- * "input + action button" heuristic. URL-pattern dispatch eliminates that.
+ * Earlier versions classified ~58% of IG states as `form` because the
+ * "input + submit-like button" heuristic ran on every page (the nav search
+ * box plus per-post save buttons). URL dispatch eliminates that.
  */
 export function classifyState(snapshot: SnapshotResult): StateKind {
+  const overlay = classifyOverlay(snapshot);
+  if (overlay) return overlay;
+
   const fromUrl = classifyByUrl(snapshot.url);
   if (fromUrl) return fromUrl;
 
@@ -53,6 +59,25 @@ export function snapshotToState(snapshot: SnapshotResult): State {
 }
 
 /**
+ * Detect overlay/error states that must override URL-based classification.
+ *
+ * If a dialog or alert is mounted on top of the page, the *current* state is
+ * the overlay, not the underlying page. URL still says `/<handle>/` but the
+ * user is now interacting with a modal.
+ */
+function classifyOverlay(snapshot: SnapshotResult): StateKind | null {
+  const roles = new Set(snapshot.atoms.map((atom) => atom.role));
+  const names = snapshot.atoms.map((atom) => atom.accessible_name.toLowerCase());
+
+  if (roles.has('alert') || names.some((name) => /\b(error|failed|try again)\b/.test(name))) {
+    return 'error';
+  }
+  if (roles.has('dialog') || roles.has('alertdialog')) return 'modal';
+
+  return null;
+}
+
+/**
  * Map well-known Instagram URL families to StateKind. Returns null when the
  * URL doesn't match any pattern, so the atom-based fallback can run.
  *
@@ -66,6 +91,12 @@ function classifyByUrl(url: string): StateKind | null {
   } catch {
     return null;
   }
+
+  // Only Instagram URLs go through the URL-pattern dispatch. Other hostnames
+  // fall through to atom-based classification so callers/tests can drive the
+  // generic path with neutral URLs.
+  if (!/(^|\.)instagram\.com$/.test(parsed.hostname)) return null;
+
   const path = parsed.pathname;
 
   // Auth/credentials flows are unambiguously forms.
@@ -97,15 +128,15 @@ function classifyByUrl(url: string): StateKind | null {
 /**
  * Atom-based fallback. Used only when URL pattern doesn't match (unknown
  * domain, deep-linked detail page without the family hint, etc.).
+ *
+ * The form heuristic here is intentionally looser than the IG-side path:
+ * once we're on an unknown domain, an `input + submit-like button` pair is
+ * a strong "this is a form" signal. We don't run the loose check on IG
+ * because IG's nav search + per-post save buttons trigger false positives.
  */
 function classifyByAtoms(snapshot: SnapshotResult): StateKind {
   const roles = new Set(snapshot.atoms.map((atom) => atom.role));
-  const names = snapshot.atoms.map((atom) => atom.accessible_name.toLowerCase());
 
-  if (roles.has('alert') || names.some((name) => /\b(error|failed|try again)\b/.test(name))) {
-    return 'error';
-  }
-  if (roles.has('dialog') || roles.has('alertdialog')) return 'modal';
   if (looksLikeForm(snapshot)) return 'form';
   if (roles.has('feed') || roles.has('list') || roles.has('grid') || roles.has('table')) {
     return 'list';
@@ -115,19 +146,24 @@ function classifyByAtoms(snapshot: SnapshotResult): StateKind {
 }
 
 /**
- * A page is `form` when it is *primarily* a form: a `form` role wrapper plus
- * a primary submit button. The earlier looser heuristic over-fired on any
- * page that happened to contain a textbox (e.g. nav search) and a save-style
- * button (e.g. post save), which described every IG page.
+ * Loose form heuristic for the atom-based fallback path. An input role plus a
+ * button whose name reads like a submit/send action is a reliable signal on
+ * unknown domains. (Not used for IG — IG uses URL dispatch.)
  */
 function looksLikeForm(snapshot: SnapshotResult): boolean {
   const roles = new Set(snapshot.atoms.map((atom) => atom.role));
-  if (!roles.has('form')) return false;
+  const hasInput =
+    roles.has('textbox') ||
+    roles.has('searchbox') ||
+    roles.has('combobox') ||
+    roles.has('spinbutton');
+
+  if (!hasInput) return false;
 
   return snapshot.atoms.some(
     (atom) =>
       atom.role === 'button' &&
-      /\b(submit|send|save|next|continue|log in|sign in|sign up|create account|reset password)\b/i.test(
+      /\b(submit|send|save|next|continue|log in|sign in|sign up|create account)\b/i.test(
         atom.accessible_name,
       ),
   );
