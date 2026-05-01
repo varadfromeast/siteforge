@@ -28,6 +28,10 @@ export function surfaceAtoms(atoms: Atom[], pageUrl: string): Atom[] {
     if (isMediaPlaceholder(atom)) return false;
     if (isFooterChrome(atom)) return false;
     if (isCaptionLink(atom)) return false;
+    if (isCommentCounter(name)) return false;
+    if (isHashtagAtom(atom)) return false;
+    if (isDmSidebarItem(name)) return false;
+    if (isGeoLocation(atom)) return false;
     if (isRepeatedSuggestionAction(name)) return false;
     if (isGlobalChrome(name)) return false;
     if (isContentItem(atom, handle)) return false;
@@ -200,11 +204,62 @@ function isFooterChrome(atom: Atom): boolean {
  * post content (emoji, hashtags, copy), not navigation identity.
  */
 function isCaptionLink(atom: Atom): boolean {
-  if (atom.role !== 'link') return false;
+  if (atom.role !== 'link' && atom.role !== 'button') return false;
   const name = atom.accessible_name;
   if (name.length < 20) return false;
   // Heuristic: contains a sentence-end, multi-word hashtag run, or bullet.
   return /[.!?]\s|\s•\s|#\w+\s+#\w+/.test(name);
+}
+
+/**
+ * Per-comment counter buttons IG renders for each comment in the side panel
+ * of a reel or post: "comment 1,368", "comment 10.3k", "comment 14".
+ * Numbers tick up as engagement happens, so the surface drifts on every
+ * visit. The single canonical "comment" action button on the post chrome is
+ * still kept — that one has no number suffix.
+ */
+function isCommentCounter(name: string): boolean {
+  return /^comment\s+\d[\d,.]*[kKmM]?$/.test(name);
+}
+
+/**
+ * Hashtags rendered as link or button role. IG injects them everywhere a
+ * caption is shown — most of the 60+ atom bloat in reel views comes from
+ * suggested-reel hashtags ("#fyp", "#chess", "#fitness", ...).
+ */
+function isHashtagAtom(atom: Atom): boolean {
+  if (atom.role !== 'link' && atom.role !== 'button') return false;
+  return /^#\w/.test(atom.accessible_name);
+}
+
+/**
+ * DM sidebar items — when the messages tray is visible alongside another
+ * page, each visible conversation produces a cluster of action atoms with
+ * the contact's username embedded:
+ *   "open the profile page of <handle>"
+ *   "react to message from <handle>"
+ *   "reply to message from <handle>"
+ *   "see (more) options for message from <handle>"
+ * The list rotates as new messages arrive; every rotation invalidates the
+ * surface hash even though the user is on the same logical page.
+ */
+function isDmSidebarItem(name: string): boolean {
+  return /^(open the profile page of|react to message from|reply to message from|see (?:more )?options for message from)\b/.test(
+    name,
+  );
+}
+
+/**
+ * Geo-tagged location links from feed posts: "bangalore, india",
+ * "los angeles, california". The link points to /explore/locations/<id>/.
+ * They rotate with whichever posts are currently in the feed window.
+ *
+ * Restricted to `link` role and a "<word>, <words>" shape so we don't
+ * accidentally match unrelated comma-separated copy.
+ */
+function isGeoLocation(atom: Atom): boolean {
+  if (atom.role !== 'link') return false;
+  return /^[a-z][a-z\s.\-']{2,40},\s+[a-z][a-z\s.\-']{2,40}$/i.test(atom.accessible_name);
 }
 
 /**
