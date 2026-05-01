@@ -1,0 +1,63 @@
+{
+  "run_dir": "/Users/varad/V/repo/siteforge/.siteforge/probes/2026-05-01T05-29-15-149Z",
+  "targets": [
+    {
+      "target_url": "https://www.instagram.com/chrisaur/",
+      "capture_1_path": "/Users/varad/V/repo/siteforge/.siteforge/probes/2026-05-01T05-29-15-149Z/01-chrisaur-capture-1.json",
+      "capture_2_path": "/Users/varad/V/repo/siteforge/.siteforge/probes/2026-05-01T05-29-15-149Z/01-chrisaur-capture-2.json",
+      "state_id_1": "541feeaa5351ba1c9fb7eafae01cb21ed285c72d98505767a3b9d57bd30f3db0",
+      "state_id_2": "541feeaa5351ba1c9fb7eafae01cb21ed285c72d98505767a3b9d57bd30f3db0",
+      "surface_id_1": "0fbb5d586fe45af05a8dbdc2951d127488f36d27c3005fcea3e5c6b6c401139f",
+      "surface_id_2": "0fbb5d586fe45af05a8dbdc2951d127488f36d27c3005fcea3e5c6b6c401139f",
+      "hashes_match": true,
+      "surface_hashes_match": true,
+      "atoms_raw_count_1": 542,
+      "atoms_raw_count_2": 542,
+      "atoms_canonical_count_1": 113,
+      "atoms_canonical_count_2": 113,
+      "atoms_surface_count_1": 35,
+      "atoms_surface_count_2": 35,
+      "only_in_1_count": 0,
+      "only_in_2_count": 0
+    },
+    {
+      "target_url": "https://www.instagram.com/ukryta.nazwa.uzytkownika/",
+      "capture_1_path": "/Users/varad/V/repo/siteforge/.siteforge/probes/2026-05-01T05-29-15-149Z/02-ukryta.nazwa.uzytkownika-capture-1.json",
+      "capture_2_path": "/Users/varad/V/repo/siteforge/.siteforge/probes/2026-05-01T05-29-15-149Z/02-ukryta.nazwa.uzytkownika-capture-2.json",
+      "diff_path": "/Users/varad/V/repo/siteforge/.siteforge/probes/2026-05-01T05-29-15-149Z/02-ukryta.nazwa.uzytkownika-diff.json",
+      "state_id_1": "89f4d164d434063fe293984413aeaf8e64e3e1a95949079bf907346141326e4d",
+      "state_id_2": "04a3ab59a32771cce2960a1f7f23cd4597c64b01cbceca486cda8446a9167d0f",
+      "surface_id_1": "35f7bb27795b8134f4ee011d2b751e15885c3ad6088f76e55ccab703071e8b60",
+      "surface_id_2": "3660b2f01cf8c67402543114b3917056df629763a1fcad2a3e7c4cc5499aff94",
+      "hashes_match": false,
+      "surface_hashes_match": false,
+      "atoms_raw_count_1": 766,
+      "atoms_raw_count_2": 768,
+      "atoms_canonical_count_1": 151,
+      "atoms_canonical_count_2": 151,
+      "atoms_surface_count_1": 53,
+      "atoms_surface_count_2": 53,
+      "only_in_1_count": 9,
+      "only_in_2_count": 9
+    },
+    {
+      "target_url": "https://www.instagram.com/todds_best_friend/",
+      "capture_1_path": "/Users/varad/V/repo/siteforge/.siteforge/probes/2026-05-01T05-29-15-149Z/03-todds_best_friend-capture-1.json",
+      "capture_2_path": "/Users/varad/V/repo/siteforge/.siteforge/probes/2026-05-01T05-29-15-149Z/03-todds_best_friend-capture-2.json",
+      "state_id_1": "5873bd58a60cd27eb843745971578bf2b382ac6005df6488033383490546b3ad",
+      "state_id_2": "5873bd58a60cd27eb843745971578bf2b382ac6005df6488033383490546b3ad",
+      "surface_id_1": "592e0825466046541333384abcda576064c77adec16b18fe32a44b1406614631",
+      "surface_id_2": "592e0825466046541333384abcda576064c77adec16b18fe32a44b1406614631",
+      "hashes_match": true,
+      "surface_hashes_match": true,
+      "atoms_raw_count_1": 605,
+      "atoms_raw_count_2": 605,
+      "atoms_canonical_count_1": 121,
+      "atoms_canonical_count_2": 121,
+      "atoms_surface_count_1": 37,
+      "atoms_surface_count_2": 37,
+      "only_in_1_count": 0,
+      "only_in_2_count": 0
+    }
+  ]
+}

@@ -15,8 +15,9 @@ in the project operates on data structures; this module operates on a browser.
 The browser's accessibility tree — the structured semantic representation of
 the page used by screen readers. Roles like `button`, `link`, accessible names,
 states (checked/expanded/disabled). The tree is what we trust as "what's on
-the page", not the raw DOM. Playwright exposes it via
-`page.accessibility.snapshot()`.
+the page", not the raw DOM. Playwright 1.59 no longer exposes the old
+`page.accessibility.snapshot()` API, so v0.0.2 reads Chromium's
+`Accessibility.getFullAXTree` via a Playwright CDP session.
 
 ### AxNode
 A node in the a11y tree. Has a `role`, an optional `name`, an optional

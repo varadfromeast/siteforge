@@ -1,0 +1,19 @@
+{
+  "run_dir": "/Users/varad/V/repo/siteforge/.siteforge/probes/2026-05-01T05-22-10-329Z",
+  "targets": [
+    {
+      "target_url": "https://www.instagram.com/varad.th/",
+      "capture_1_path": "/Users/varad/V/repo/siteforge/.siteforge/probes/2026-05-01T05-22-10-329Z/01-varad.th-capture-1.json",
+      "capture_2_path": "/Users/varad/V/repo/siteforge/.siteforge/probes/2026-05-01T05-22-10-329Z/01-varad.th-capture-2.json",
+      "state_id_1": "7190d4a070db86266c596cd80f802e1c8877f55c265c3527f9836b19fc8fffd1",
+      "state_id_2": "7190d4a070db86266c596cd80f802e1c8877f55c265c3527f9836b19fc8fffd1",
+      "hashes_match": true,
+      "atoms_raw_count_1": 623,
+      "atoms_raw_count_2": 606,
+      "atoms_canonical_count_1": 122,
+      "atoms_canonical_count_2": 122,
+      "only_in_1_count": 0,
+      "only_in_2_count": 0
+    }
+  ]
+}

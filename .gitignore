@@ -5,8 +5,8 @@ dist/
 # Dependencies
 node_modules/
 
-# Local site data
-.siteforge/
+# Local browser/session data
+.siteforge/chrome-cdp/
 ~/.siteforge/
 
 # Editor / OS

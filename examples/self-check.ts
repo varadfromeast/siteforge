@@ -6,8 +6,8 @@
  *   npm run selfcheck
  */
 
-import { canonicalizeAtoms, hashAtomSet, hashValue } from '../src/core/index.js';
-import type { Atom } from '../src/core/types.js';
+import { canonicalizeAtoms, hashAtomSet, hashValue, planPath } from '../src/core/index.js';
+import type { Atom, Operation, SiteGraph, State } from '../src/core/types.js';
 
 let failures = 0;
 
@@ -104,6 +104,12 @@ console.log('\n[canonicalizeAtoms] noise filtering');
   // K/M suffixes count as numeric.
   const big: Atom[] = [{ role: 'button', accessible_name: '1.2K', attrs: {} }];
   assert(canonicalizeAtoms(big).length === 0, '1.2K-style counter dropped');
+
+  // Instagram business prompts appear and disappear between identical profile visits.
+  const promo: Atom[] = [
+    { role: 'button', accessible_name: 'Explore insights and manage your ads here.', attrs: {} },
+  ];
+  assert(canonicalizeAtoms(promo).length === 0, 'ephemeral insights/ad prompt dropped');
 }
 
 console.log('\n[canonicalizeAtoms] href normalization');
@@ -126,6 +132,75 @@ console.log('\n[hashAtomSet] sensitivity to real changes');
     hashAtomSet(canonicalizeAtoms(before)) !== hashAtomSet(canonicalizeAtoms(after)),
     'name change → different hash',
   );
+}
+
+console.log('\n[planPath] BFS behavior');
+{
+  const state = (id: string): State => ({
+    id,
+    kind: 'page',
+    label: id,
+    atoms: [],
+    confidence: 1,
+    last_seen: '2026-05-01T00:00:00.000Z',
+  });
+  const edge = (id: string, from: string, to: string, confidence: number): Operation => ({
+    id,
+    from_state: from,
+    to_state: to,
+    op_type: 'click',
+    selector_xpath: `/button[@id="${id}"]`,
+    instruction: id,
+    args_schema: [],
+    confidence,
+    reason: 'dom-direct',
+    success_count: 0,
+    failure_count: 0,
+    validation_hash: to,
+  });
+  const graph: SiteGraph = {
+    schema_version: 1,
+    domain: 'example.com',
+    states: {
+      A: state('A'),
+      B: state('B'),
+      C: state('C'),
+      D: state('D'),
+      Z: state('Z'),
+    },
+    edges: [
+      edge('a-direct-low', 'A', 'D', 0.4),
+      edge('a-b', 'A', 'B', 0.9),
+      edge('b-d', 'B', 'D', 0.9),
+      edge('a-c', 'A', 'C', 0.6),
+      edge('c-d', 'C', 'D', 0.6),
+      edge('b-a-cycle', 'B', 'A', 0.9),
+    ],
+    processes: {},
+    clusters: {},
+    meta: { last_indexed: '2026-05-01T00:00:00.000Z', drift_score: 0, states_count: 5, edges_count: 6 },
+  };
+
+  const shortest = planPath(graph, 'A', 'D');
+  assert(shortest.ok && deepEqual(shortest.path, ['a-direct-low']), 'shortest path wins by default');
+
+  const filtered = planPath(graph, 'A', 'D', { min_confidence: 0.8 });
+  assert(filtered.ok && deepEqual(filtered.path, ['a-b', 'b-d']), 'min_confidence filters low edges');
+
+  const fallback = planPath(graph, 'A', 'D', { min_confidence: 0.95 });
+  assert(fallback.ok && deepEqual(fallback.path, ['a-direct-low']), 'falls back if filtering disconnects');
+
+  const same = planPath(graph, 'A', 'A');
+  assert(same.ok && same.path.length === 0 && same.total_confidence === 1, 'source equals target → empty path');
+
+  const unknownSource = planPath(graph, 'NOPE', 'D');
+  assert(!unknownSource.ok && unknownSource.reason === 'unknown-source', 'unknown source is reported');
+
+  const unknownTarget = planPath(graph, 'A', 'NOPE');
+  assert(!unknownTarget.ok && unknownTarget.reason === 'unknown-target', 'unknown target is reported');
+
+  const disconnected = planPath(graph, 'A', 'Z');
+  assert(!disconnected.ok && disconnected.reason === 'no-path', 'disconnected target returns no-path');
 }
 
 console.log(`\n${failures === 0 ? '✅ all checks passed' : `❌ ${failures} failures`}`);

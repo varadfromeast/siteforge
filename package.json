@@ -15,8 +15,11 @@
     "dev": "tsx watch src/cli/index.ts",
     "typecheck": "tsc --noEmit",
     "selfcheck": "tsx examples/self-check.ts",
+    "snapshotcheck": "tsx examples/snapshot-self-check.ts",
+    "storagecheck": "tsx examples/storage-self-check.ts",
+    "map": "tsx examples/map-instagram.ts",
     "probe": "tsx examples/probe-instagram.ts",
-    "test": "npm run selfcheck"
+    "test": "npm run selfcheck && npm run snapshotcheck && npm run storagecheck"
   },
   "dependencies": {
     "@browserbasehq/stagehand": "^3.0.0",

@@ -1,9 +1,9 @@
 /**
  * Walk Playwright's accessibility-tree snapshot, extract Atom[].
  *
- * We use Playwright's built-in `page.accessibility.snapshot()` rather than
- * Stagehand's `captureHybridSnapshot` for v0.0.2 — it's a stable public API,
- * has no LLM dependency, and is good enough for state hashing.
+ * We use Chromium's accessibility tree via Playwright's CDP session rather
+ * than Stagehand's `captureHybridSnapshot` for v0.0.2 — it has no LLM
+ * dependency and is good enough for state hashing.
  *
  * The Stagehand a11y pipeline gives us richer xpath_map and frame-hopping;
  * we'll switch when we need those features (likely v0.0.4 when explorer

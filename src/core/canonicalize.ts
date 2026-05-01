@@ -55,6 +55,11 @@ const GENERATED_ID_PATTERNS: RegExp[] = [
   /^MuiBox-root-\d+$/i, // material UI
 ];
 
+/** Ephemeral product prompts that appear/disappear between otherwise-identical visits. */
+const UNSTABLE_NAME_PATTERNS: RegExp[] = [
+  /\bexplore insights\b.*\bmanage your ads\b/i,
+];
+
 /** True if the value looks like a generated id we should drop. */
 function isGeneratedId(value: string): boolean {
   return GENERATED_ID_PATTERNS.some((re) => re.test(value));
@@ -68,6 +73,11 @@ function normalizeName(raw: string): string {
 /** True if a string is essentially just a number/symbols (likely a counter). */
 function isPureNumeric(s: string): boolean {
   return /^[\d\s,.\-+kKmM%]*$/.test(s) && /\d/.test(s);
+}
+
+/** True if a name looks like a transient coachmark/promo, not page structure. */
+function isUnstableName(s: string): boolean {
+  return UNSTABLE_NAME_PATTERNS.some((re) => re.test(s));
 }
 
 /** Strip query strings from URL-like values; keep only path. */
@@ -108,6 +118,7 @@ export function canonicalizeAtoms(atoms: Atom[]): Atom[] {
     const accessible_name = normalizeName(atom.accessible_name ?? '');
     if (!accessible_name) continue;
     if (isPureNumeric(accessible_name)) continue;
+    if (isUnstableName(accessible_name)) continue;
 
     const attrs = canonicalizeAttrs(atom.attrs ?? {});
 
