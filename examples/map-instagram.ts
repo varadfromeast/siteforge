@@ -21,9 +21,17 @@ import { createInterface } from 'node:readline/promises';
 import { chromium, type Browser, type BrowserContext, type Page } from 'playwright';
 import { canonicalizeAtoms, hashAtomSet, hashValue } from '../src/core/index.js';
 import { captureSnapshot, classifyState, surfaceAtoms } from '../src/snapshot/index.js';
-import type { Atom, StateKind } from '../src/core/types.js';
+import type { Atom, OpType, StateKind } from '../src/core/types.js';
 
 const DEFAULT_CDP_URL = 'http://127.0.0.1:9222';
+
+/**
+ * Maximum age of a recorded click (ms) before we consider it stale and refuse
+ * to attach it to a state transition. Catches the case where a user clicks
+ * something, then sits idle, then IG auto-refreshes the feed: without this
+ * window the old click would falsely attach to the auto-refresh edge.
+ */
+const CLICK_STALENESS_MS = 5_000;
 
 interface Args {
   startUrl: string;
@@ -70,6 +78,18 @@ interface MapEdge {
   last_seen: string;
   from_url: string;
   to_url: string;
+  /**
+   * What kind of action drove this transition.
+   *
+   * - `click`: a recorded click on a button/link/role-bearing element.
+   * - `navigate`: URL changed without a recorded click (back button, manual
+   *   URL bar, programmatic navigation, or a click that escaped the recorder).
+   * - `fill`: a textbox/searchbox interaction.
+   *
+   * Maps directly to `OpType` in core/types.ts so this field is ready to be
+   * used as `Operation.op_type` when we export to a real SiteGraph later.
+   */
+  op_type: OpType;
   last_click?: LastClick;
 }
 
@@ -244,13 +264,27 @@ async function installClickRecorder(page: Page): Promise<void> {
     .catch(() => undefined);
 }
 
+/**
+ * Read the most recent click from the page and clear it. Clearing prevents an
+ * old click from being attached to a later state change that wasn't actually
+ * caused by it (e.g. the user clicks, idles, IG auto-refreshes the feed).
+ *
+ * Also enforces a staleness window: a click older than `CLICK_STALENESS_MS`
+ * is treated as if no click had been recorded.
+ */
 async function readLastClick(page: Page): Promise<LastClick | undefined> {
-  return page
+  const click = await page
     .evaluate(() => {
       const win = window as typeof window & { __siteforgeLastClick?: LastClick };
-      return win.__siteforgeLastClick;
+      const value = win.__siteforgeLastClick;
+      win.__siteforgeLastClick = undefined;
+      return value;
     })
     .catch(() => undefined);
+
+  if (!click) return undefined;
+  if (Date.now() - click.at > CLICK_STALENESS_MS) return undefined;
+  return click;
 }
 
 async function captureCurrent(page: Page): Promise<CaptureRecord> {
@@ -327,12 +361,17 @@ function mergeEdge(map: SiteMap, from: CaptureRecord, to: CaptureRecord): void {
 
   const now = new Date().toISOString();
   const id = `${from.surface_id.slice(0, 12)}->${to.surface_id.slice(0, 12)}`;
+  const opType = inferOpType(to);
   const existing = map.edges.find((edge) => edge.id === id);
   if (existing) {
     existing.count++;
     existing.last_seen = now;
     existing.to_url = to.url;
     existing.last_click = to.last_click;
+    // Promote op_type only if we got a stronger signal this time.
+    if (existing.op_type === 'navigate' && opType !== 'navigate') {
+      existing.op_type = opType;
+    }
     return;
   }
 
@@ -345,8 +384,33 @@ function mergeEdge(map: SiteMap, from: CaptureRecord, to: CaptureRecord): void {
     last_seen: now,
     from_url: from.url,
     to_url: to.url,
+    op_type: opType,
     last_click: to.last_click,
   });
+}
+
+/**
+ * Derive an `OpType` from the recorded click on the destination capture.
+ *
+ * - No click recorded → `navigate` (back button, URL bar, auto-refresh).
+ * - Click on input-shaped element → `fill`.
+ * - Click on submit-flavoured button text → `submit`.
+ * - Anything else with a click → `click`.
+ */
+function inferOpType(to: CaptureRecord): OpType {
+  const click = to.last_click;
+  if (!click) return 'navigate';
+
+  const role = (click.role ?? '').toLowerCase();
+  const text = click.text.toLowerCase();
+
+  if (role === 'textbox' || role === 'searchbox' || role === 'combobox' || role === 'input') {
+    return 'fill';
+  }
+  if (/\b(submit|send|post|publish|share|save changes|sign in|log in|sign up)\b/.test(text)) {
+    return 'submit';
+  }
+  return 'click';
 }
 
 function labelForRecord(record: CaptureRecord): string {
@@ -424,8 +488,10 @@ async function main(): Promise<void> {
       lastSignature = signature;
       writeMap(map);
 
+      const lastEdge = map.edges[map.edges.length - 1];
+      const opTag = lastEdge ? ` [${lastEdge.op_type}]` : '';
       console.log(
-        `[siteforge-map] state ${Object.keys(map.nodes).length}, edge ${map.edges.length}: ${record.kind} ${record.surface_id.slice(0, 12)} ${record.url}`,
+        `[siteforge-map] state ${Object.keys(map.nodes).length}, edge ${map.edges.length}${opTag}: ${record.kind} ${record.surface_id.slice(0, 12)} ${record.url}`,
       );
       console.log(
         `  atoms raw/canonical/surface: ${record.atoms_raw_count}/${record.atoms_canonical_count}/${record.atoms_surface_count}`,
